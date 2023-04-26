@@ -30,9 +30,14 @@ namespace Control_Empleados.Presentacion
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.uiPictureBox1 = new Control_Empleados.UI.UIPictureBox();
             this.lbl_nombre_login = new System.Windows.Forms.Label();
             this.flowLayoutTeclado = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblNombreLogin = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.uiButton14 = new Control_Empleados.UI.UIButton();
+            this.uiButton13 = new Control_Empleados.UI.UIButton();
             this.uiButton1 = new Control_Empleados.UI.UIButton();
             this.uiButton2 = new Control_Empleados.UI.UIButton();
             this.uiButton3 = new Control_Empleados.UI.UIButton();
@@ -45,12 +50,14 @@ namespace Control_Empleados.Presentacion
             this.uiButton10 = new Control_Empleados.UI.UIButton();
             this.uiButton11 = new Control_Empleados.UI.UIButton();
             this.uiButton12 = new Control_Empleados.UI.UIButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblNombreLogin = new System.Windows.Forms.Label();
+            this.uiPictureBox1 = new Control_Empleados.UI.UIPictureBox();
+            this.uiPictureBox2 = new Control_Empleados.UI.UIPictureBox();
+            this.lblNombreL = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox1)).BeginInit();
             this.flowLayoutTeclado.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,24 +67,8 @@ namespace Control_Empleados.Presentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 144);
+            this.panel1.Size = new System.Drawing.Size(964, 144);
             this.panel1.TabIndex = 0;
-            // 
-            // uiPictureBox1
-            // 
-            this.uiPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.uiPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.uiPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.uiPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.uiPictureBox1.BorderSize = 2;
-            this.uiPictureBox1.GradientAngle = 50F;
-            this.uiPictureBox1.Image = global::Control_Empleados.Properties.Resources.Logo_white;
-            this.uiPictureBox1.Location = new System.Drawing.Point(229, 5);
-            this.uiPictureBox1.Name = "uiPictureBox1";
-            this.uiPictureBox1.Size = new System.Drawing.Size(127, 127);
-            this.uiPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.uiPictureBox1.TabIndex = 2;
-            this.uiPictureBox1.TabStop = false;
             // 
             // lbl_nombre_login
             // 
@@ -107,6 +98,84 @@ namespace Control_Empleados.Presentacion
             this.flowLayoutTeclado.Name = "flowLayoutTeclado";
             this.flowLayoutTeclado.Size = new System.Drawing.Size(360, 436);
             this.flowLayoutTeclado.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.lblNombreLogin);
+            this.panel2.Controls.Add(this.flowLayoutTeclado);
+            this.panel2.Location = new System.Drawing.Point(225, 261);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(421, 586);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 61);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(421, 53);
+            this.panel3.TabIndex = 3;
+            // 
+            // lblNombreLogin
+            // 
+            this.lblNombreLogin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblNombreLogin.Font = new System.Drawing.Font("Arial Black", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreLogin.ForeColor = System.Drawing.Color.Purple;
+            this.lblNombreLogin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblNombreLogin.Location = new System.Drawing.Point(0, 0);
+            this.lblNombreLogin.Name = "lblNombreLogin";
+            this.lblNombreLogin.Size = new System.Drawing.Size(421, 61);
+            this.lblNombreLogin.TabIndex = 2;
+            this.lblNombreLogin.Text = " INICIO DE SESIÓN";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(171)))), ((int)(((byte)(55)))));
+            this.panel4.Location = new System.Drawing.Point(3, 112);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(422, 1);
+            this.panel4.TabIndex = 466;
+            // 
+            // uiButton14
+            // 
+            this.uiButton14.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.uiButton14.BackgroundColor = System.Drawing.Color.CornflowerBlue;
+            this.uiButton14.BorderColor = System.Drawing.Color.Indigo;
+            this.uiButton14.BorderRadius = 23;
+            this.uiButton14.BorderSize = 2;
+            this.uiButton14.FlatAppearance.BorderSize = 0;
+            this.uiButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uiButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiButton14.ForeColor = System.Drawing.Color.Black;
+            this.uiButton14.Location = new System.Drawing.Point(353, 928);
+            this.uiButton14.Name = "uiButton14";
+            this.uiButton14.Size = new System.Drawing.Size(171, 42);
+            this.uiButton14.TabIndex = 4;
+            this.uiButton14.Text = "Cambiar Usuario";
+            this.uiButton14.TextColor = System.Drawing.Color.Black;
+            this.uiButton14.UseVisualStyleBackColor = false;
+            // 
+            // uiButton13
+            // 
+            this.uiButton13.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.uiButton13.BackgroundColor = System.Drawing.Color.CornflowerBlue;
+            this.uiButton13.BorderColor = System.Drawing.Color.Indigo;
+            this.uiButton13.BorderRadius = 30;
+            this.uiButton13.BorderSize = 2;
+            this.uiButton13.FlatAppearance.BorderSize = 0;
+            this.uiButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uiButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uiButton13.ForeColor = System.Drawing.Color.Black;
+            this.uiButton13.Location = new System.Drawing.Point(310, 853);
+            this.uiButton13.Name = "uiButton13";
+            this.uiButton13.Size = new System.Drawing.Size(261, 69);
+            this.uiButton13.TabIndex = 3;
+            this.uiButton13.Text = "INICIAR SESIÓN";
+            this.uiButton13.TextColor = System.Drawing.Color.Black;
+            this.uiButton13.UseVisualStyleBackColor = false;
             // 
             // uiButton1
             // 
@@ -336,42 +405,64 @@ namespace Control_Empleados.Presentacion
             this.uiButton12.TextColor = System.Drawing.Color.White;
             this.uiButton12.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // uiPictureBox1
             // 
-            this.panel2.Controls.Add(this.lblNombreLogin);
-            this.panel2.Controls.Add(this.flowLayoutTeclado);
-            this.panel2.Location = new System.Drawing.Point(181, 192);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(421, 586);
-            this.panel2.TabIndex = 2;
+            this.uiPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.uiPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.uiPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.uiPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.uiPictureBox1.BorderSize = 2;
+            this.uiPictureBox1.GradientAngle = 50F;
+            this.uiPictureBox1.Image = global::Control_Empleados.Properties.Resources.Logo_white;
+            this.uiPictureBox1.Location = new System.Drawing.Point(229, 5);
+            this.uiPictureBox1.Name = "uiPictureBox1";
+            this.uiPictureBox1.Size = new System.Drawing.Size(127, 127);
+            this.uiPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.uiPictureBox1.TabIndex = 2;
+            this.uiPictureBox1.TabStop = false;
             // 
-            // lblNombreLogin
+            // uiPictureBox2
             // 
-            this.lblNombreLogin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblNombreLogin.Font = new System.Drawing.Font("Arial Black", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreLogin.ForeColor = System.Drawing.Color.Purple;
-            this.lblNombreLogin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblNombreLogin.Location = new System.Drawing.Point(0, 0);
-            this.lblNombreLogin.Name = "lblNombreLogin";
-            this.lblNombreLogin.Size = new System.Drawing.Size(421, 64);
-            this.lblNombreLogin.TabIndex = 2;
-            this.lblNombreLogin.Text = "INICIO DE SESIÓN";
+            this.uiPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.uiPictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.uiPictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
+            this.uiPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.uiPictureBox2.BorderSize = 2;
+            this.uiPictureBox2.GradientAngle = 50F;
+            this.uiPictureBox2.Location = new System.Drawing.Point(765, 150);
+            this.uiPictureBox2.Name = "uiPictureBox2";
+            this.uiPictureBox2.Size = new System.Drawing.Size(145, 145);
+            this.uiPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.uiPictureBox2.TabIndex = 5;
+            this.uiPictureBox2.TabStop = false;
+            // 
+            // lblNombreL
+            // 
+            this.lblNombreL.Location = new System.Drawing.Point(762, 298);
+            this.lblNombreL.Name = "lblNombreL";
+            this.lblNombreL.Size = new System.Drawing.Size(148, 37);
+            this.lblNombreL.TabIndex = 6;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ClientSize = new System.Drawing.Size(803, 809);
+            this.ClientSize = new System.Drawing.Size(964, 1007);
+            this.Controls.Add(this.lblNombreL);
+            this.Controls.Add(this.uiPictureBox2);
+            this.Controls.Add(this.uiButton14);
+            this.Controls.Add(this.uiButton13);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox1)).EndInit();
             this.flowLayoutTeclado.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,5 +487,11 @@ namespace Control_Empleados.Presentacion
         private UI.UIButton uiButton12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblNombreLogin;
+        private System.Windows.Forms.Panel panel3;
+        private UI.UIButton uiButton13;
+        private UI.UIButton uiButton14;
+        internal System.Windows.Forms.Panel panel4;
+        private UI.UIPictureBox uiPictureBox2;
+        private System.Windows.Forms.Label lblNombreL;
     }
 }

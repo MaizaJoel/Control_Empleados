@@ -60,6 +60,24 @@
     <Compile Include="Logica\LPermisos.cs" />
     <Compile Include="Logica\LPersonal.cs" />
     <Compile Include="Logica\LUsuarios.cs" />
+    <Compile Include="Presentacion\AsistenteDeInstalación\ConexionRemota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AsistenteDeInstalación\ConexionRemota.Designer.cs">
+      <DependentUpon>ConexionRemota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AsistenteDeInstalación\EleccionServidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AsistenteDeInstalación\EleccionServidor.Designer.cs">
+      <DependentUpon>EleccionServidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AsistenteDeInstalación\InstalacionBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AsistenteDeInstalación\InstalacionBD.Designer.cs">
+      <DependentUpon>InstalacionBD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +119,12 @@
     <Compile Include="UI\UI.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Presentacion\AsistenteDeInstalación\EleccionServidor.resx">
+      <DependentUpon>EleccionServidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\AsistenteDeInstalación\InstalacionBD.resx">
+      <DependentUpon>InstalacionBD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\ControlUsuarios.resx">
       <DependentUpon>ControlUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,5 +276,6 @@
   <ItemGroup>
     <None Include="Resources\Logo white.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

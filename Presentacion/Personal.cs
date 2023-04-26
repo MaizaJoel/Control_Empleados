@@ -249,67 +249,6 @@ namespace Control_Empleados.Presentacion
             }
         }
 
-        //private void dataGridViewListadoPersonal_CellClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    if (e.ColumnIndex == dataGridViewListadoPersonal.Columns["Eliminar"].Index)
-        //    {
-        //        DialogResult result = MessageBox.Show("¿Solo se Cambiara el Estado para que no pueda acceder, Desea Continuar?", "Eliminando registros", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-        //        if (result == DialogResult.OK)
-        //        {
-        //            EliminarPersonal();
-        //        }
-
-        //    }
-        //    if (e.ColumnIndex == dataGridViewListadoPersonal.Columns["Editar"].Index)
-        //    {
-        //        ObtenerDatos();
-        //    }
-
-        //}
-        //private void ObtenerDatos()
-        //{
-        //    idPersonal = Convert.ToInt32(dataGridViewListadoPersonal.SelectedCells[2].Value);
-        //    estado = dataGridViewListadoPersonal.SelectedCells[8].Value.ToString();
-        //    if (estado == "ELIMINADO")
-        //    {
-        //        restaurar_personal();
-        //    }
-        //    else
-        //    {
-        //        txtNombresCompletos.Text = dataGridViewListadoPersonal.SelectedCells[3].Value.ToString();
-        //        txtCedula.Text = dataGridViewListadoPersonal.SelectedCells[4].Value.ToString();
-        //        txtDireccion.Text = dataGridViewListadoPersonal.SelectedCells[10].Value.ToString();
-        //        txtCargo.Text = dataGridViewListadoPersonal.SelectedCells[6].Value.ToString();
-        //        idCargo = Convert.ToInt32(dataGridViewListadoPersonal.SelectedCells[7].Value);
-        //        txtSueldoxHora.Text = dataGridViewListadoPersonal.SelectedCells[5].Value.ToString();
-        //        lblPaginado.Visible = false;
-        //        panelRegistros.Visible = true;
-        //        panelRegistros.Dock = DockStyle.Fill;
-        //        dataGridViewListadoCargos.Visible = false;
-        //        lblSueldoPorHora.Visible = true;
-        //        panelBtnGuardarPersonal.Visible = true;
-        //        btnGuardarPersonal.Visible = false;
-        //        btnActualizarPersonal.Visible = true;
-        //        panelCargos.Visible = false;
-
-        //    }
-        //}
-        //private void restaurar_personal()
-        //{
-
-        //}
-        //private void EliminarPersonal()
-        //{
-        //    idPersonal = Convert.ToInt32(dataGridViewListadoPersonal.SelectedCells[2].Value);
-        //    LPersonal parametros = new LPersonal();
-        //    DPersonal funcion = new DPersonal();
-        //    parametros.IdPersonal = idPersonal;
-        //    if (funcion.EliminarPersonal(parametros) == true)
-        //    {
-        //        MostrarPersonal();
-        //    }
-        //}
-
         private void Personal_Load(object sender, EventArgs e)
         {
             ReiniciarPaginado();

@@ -14,3 +14,19 @@ D:\Descargas Freesias\Proyecto Control Empleados\Control_Empleados\obj\Debug\Con
 D:\Descargas Freesias\Proyecto Control Empleados\Control_Empleados\obj\Debug\Control_Empleados.UI.Form_Binding_Information.resources
 D:\Descargas Freesias\Proyecto Control Empleados\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.Login.resources
 D:\Descargas Freesias\Proyecto Control Empleados\Control_Empleados\obj\Debug\Control_Empleados.csproj.SuggestedBindingRedirects.cache
+C:\Users\MaizaJoel\Desktop\Control_Empleados\bin\Debug\Control_Empleados.exe.config
+C:\Users\MaizaJoel\Desktop\Control_Empleados\bin\Debug\Control_Empleados.exe
+C:\Users\MaizaJoel\Desktop\Control_Empleados\bin\Debug\Control_Empleados.pdb
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.csproj.AssemblyReference.cache
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.csproj.SuggestedBindingRedirects.cache
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.ControlUsuarios.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.Login.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.MenuPrincipal.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.Personal.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.Registro.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Properties.Resources.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.UI.Form_Binding_Information.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.csproj.GenerateResource.cache
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.csproj.CoreCompileInputs.cache
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.exe
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.pdb
