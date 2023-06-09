@@ -35,10 +35,14 @@ namespace Control_Empleados.Presentacion
             this.EliminarP = new System.Windows.Forms.DataGridViewImageColumn();
             this.lblPaginado = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnInicio = new Control_Empleados.UI.UIButton();
+            this.btnFinal = new Control_Empleados.UI.UIButton();
             this.panelBotonesPaginado = new System.Windows.Forms.Panel();
+            this.btnAnterior = new Control_Empleados.UI.UIButton();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotalPaginas = new System.Windows.Forms.Label();
             this.lblPaginaActual = new System.Windows.Forms.Label();
+            this.btnSiguiente = new Control_Empleados.UI.UIButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMostrarTodos = new System.Windows.Forms.Button();
             this.pictureBoxAgregar = new System.Windows.Forms.PictureBox();
@@ -47,8 +51,12 @@ namespace Control_Empleados.Presentacion
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.panelRegistros = new System.Windows.Forms.Panel();
             this.panelBtnGuardarPersonal = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnGuardarPersonal = new Control_Empleados.UI.UIButton();
+            this.btnActualizarPersonal = new Control_Empleados.UI.UIButton();
             this.panelCargos = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnGuardarCargo = new Control_Empleados.UI.UIButton();
+            this.btnActualizarCargo = new Control_Empleados.UI.UIButton();
             this.btnVolverCargos = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.txtSueldoN = new System.Windows.Forms.TextBox();
@@ -79,14 +87,6 @@ namespace Control_Empleados.Presentacion
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnGuardarPersonal = new Control_Empleados.UI.UIButton();
-            this.btnActualizarPersonal = new Control_Empleados.UI.UIButton();
-            this.btnGuardarCargo = new Control_Empleados.UI.UIButton();
-            this.btnActualizarCargo = new Control_Empleados.UI.UIButton();
-            this.btnInicio = new Control_Empleados.UI.UIButton();
-            this.btnFinal = new Control_Empleados.UI.UIButton();
-            this.btnAnterior = new Control_Empleados.UI.UIButton();
-            this.btnSiguiente = new Control_Empleados.UI.UIButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListadoPersonal)).BeginInit();
             this.lblPaginado.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -170,6 +170,46 @@ namespace Control_Empleados.Presentacion
             this.panel3.Size = new System.Drawing.Size(313, 68);
             this.panel3.TabIndex = 7;
             // 
+            // btnInicio
+            // 
+            this.btnInicio.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnInicio.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnInicio.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnInicio.BorderRadius = 20;
+            this.btnInicio.BorderSize = 0;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.Location = new System.Drawing.Point(3, 14);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(150, 40);
+            this.btnInicio.TabIndex = 1;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.TextColor = System.Drawing.Color.White;
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
+            // 
+            // btnFinal
+            // 
+            this.btnFinal.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnFinal.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnFinal.BorderRadius = 20;
+            this.btnFinal.BorderSize = 0;
+            this.btnFinal.FlatAppearance.BorderSize = 0;
+            this.btnFinal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinal.ForeColor = System.Drawing.Color.White;
+            this.btnFinal.Location = new System.Drawing.Point(159, 14);
+            this.btnFinal.Name = "btnFinal";
+            this.btnFinal.Size = new System.Drawing.Size(150, 40);
+            this.btnFinal.TabIndex = 0;
+            this.btnFinal.Text = "Final";
+            this.btnFinal.TextColor = System.Drawing.Color.White;
+            this.btnFinal.UseVisualStyleBackColor = false;
+            this.btnFinal.Click += new System.EventHandler(this.btnFinal_Click);
+            // 
             // panelBotonesPaginado
             // 
             this.panelBotonesPaginado.BackColor = System.Drawing.Color.Transparent;
@@ -183,6 +223,26 @@ namespace Control_Empleados.Presentacion
             this.panelBotonesPaginado.Name = "panelBotonesPaginado";
             this.panelBotonesPaginado.Size = new System.Drawing.Size(415, 68);
             this.panelBotonesPaginado.TabIndex = 6;
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAnterior.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAnterior.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAnterior.BorderRadius = 20;
+            this.btnAnterior.BorderSize = 0;
+            this.btnAnterior.FlatAppearance.BorderSize = 0;
+            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnterior.ForeColor = System.Drawing.Color.White;
+            this.btnAnterior.Location = new System.Drawing.Point(12, 14);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(150, 40);
+            this.btnAnterior.TabIndex = 1;
+            this.btnAnterior.Text = "Anterior";
+            this.btnAnterior.TextColor = System.Drawing.Color.White;
+            this.btnAnterior.UseVisualStyleBackColor = false;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // label3
             // 
@@ -212,6 +272,26 @@ namespace Control_Empleados.Presentacion
             this.lblPaginaActual.TabIndex = 3;
             this.lblPaginaActual.Text = "0";
             this.lblPaginaActual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSiguiente.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSiguiente.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSiguiente.BorderRadius = 20;
+            this.btnSiguiente.BorderSize = 0;
+            this.btnSiguiente.FlatAppearance.BorderSize = 0;
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.ForeColor = System.Drawing.Color.White;
+            this.btnSiguiente.Location = new System.Drawing.Point(250, 14);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(150, 40);
+            this.btnSiguiente.TabIndex = 0;
+            this.btnSiguiente.Text = "Siguiente";
+            this.btnSiguiente.TextColor = System.Drawing.Color.White;
+            this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // panel1
             // 
@@ -321,6 +401,45 @@ namespace Control_Empleados.Presentacion
             this.panelBtnGuardarPersonal.Size = new System.Drawing.Size(332, 73);
             this.panelBtnGuardarPersonal.TabIndex = 24;
             // 
+            // btnGuardarPersonal
+            // 
+            this.btnGuardarPersonal.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardarPersonal.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardarPersonal.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardarPersonal.BorderRadius = 20;
+            this.btnGuardarPersonal.BorderSize = 0;
+            this.btnGuardarPersonal.FlatAppearance.BorderSize = 0;
+            this.btnGuardarPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarPersonal.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarPersonal.Location = new System.Drawing.Point(3, 3);
+            this.btnGuardarPersonal.Name = "btnGuardarPersonal";
+            this.btnGuardarPersonal.Size = new System.Drawing.Size(150, 61);
+            this.btnGuardarPersonal.TabIndex = 0;
+            this.btnGuardarPersonal.Text = "GUARDAR";
+            this.btnGuardarPersonal.TextColor = System.Drawing.Color.White;
+            this.btnGuardarPersonal.UseVisualStyleBackColor = false;
+            this.btnGuardarPersonal.Click += new System.EventHandler(this.btnGuardarPersonal_Click);
+            // 
+            // btnActualizarPersonal
+            // 
+            this.btnActualizarPersonal.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnActualizarPersonal.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btnActualizarPersonal.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnActualizarPersonal.BorderRadius = 20;
+            this.btnActualizarPersonal.BorderSize = 0;
+            this.btnActualizarPersonal.FlatAppearance.BorderSize = 0;
+            this.btnActualizarPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarPersonal.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarPersonal.Location = new System.Drawing.Point(159, 3);
+            this.btnActualizarPersonal.Name = "btnActualizarPersonal";
+            this.btnActualizarPersonal.Size = new System.Drawing.Size(161, 61);
+            this.btnActualizarPersonal.TabIndex = 1;
+            this.btnActualizarPersonal.Text = "ACTUALIZAR";
+            this.btnActualizarPersonal.TextColor = System.Drawing.Color.White;
+            this.btnActualizarPersonal.UseVisualStyleBackColor = false;
+            this.btnActualizarPersonal.Click += new System.EventHandler(this.btnActualizarPersonal_Click);
+            // 
             // panelCargos
             // 
             this.panelCargos.Controls.Add(this.flowLayoutPanel2);
@@ -344,6 +463,45 @@ namespace Control_Empleados.Presentacion
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(409, 73);
             this.flowLayoutPanel2.TabIndex = 23;
+            // 
+            // btnGuardarCargo
+            // 
+            this.btnGuardarCargo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardarCargo.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardarCargo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardarCargo.BorderRadius = 0;
+            this.btnGuardarCargo.BorderSize = 0;
+            this.btnGuardarCargo.FlatAppearance.BorderSize = 0;
+            this.btnGuardarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarCargo.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCargo.Location = new System.Drawing.Point(3, 3);
+            this.btnGuardarCargo.Name = "btnGuardarCargo";
+            this.btnGuardarCargo.Size = new System.Drawing.Size(150, 61);
+            this.btnGuardarCargo.TabIndex = 0;
+            this.btnGuardarCargo.Text = "GUARDAR";
+            this.btnGuardarCargo.TextColor = System.Drawing.Color.White;
+            this.btnGuardarCargo.UseVisualStyleBackColor = false;
+            this.btnGuardarCargo.Click += new System.EventHandler(this.btnGuardarCargo_Click);
+            // 
+            // btnActualizarCargo
+            // 
+            this.btnActualizarCargo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnActualizarCargo.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btnActualizarCargo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnActualizarCargo.BorderRadius = 0;
+            this.btnActualizarCargo.BorderSize = 0;
+            this.btnActualizarCargo.FlatAppearance.BorderSize = 0;
+            this.btnActualizarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarCargo.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarCargo.Location = new System.Drawing.Point(159, 3);
+            this.btnActualizarCargo.Name = "btnActualizarCargo";
+            this.btnActualizarCargo.Size = new System.Drawing.Size(161, 61);
+            this.btnActualizarCargo.TabIndex = 1;
+            this.btnActualizarCargo.Text = "ACTUALIZAR";
+            this.btnActualizarCargo.TextColor = System.Drawing.Color.White;
+            this.btnActualizarCargo.UseVisualStyleBackColor = false;
+            this.btnActualizarCargo.Click += new System.EventHandler(this.btnActualizarCargo_Click);
             // 
             // btnVolverCargos
             // 
@@ -633,7 +791,7 @@ namespace Control_Empleados.Presentacion
             // dataGridViewImageColumn2
             // 
             this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::Control_Empleados.Properties.Resources.delete;
+            this.dataGridViewImageColumn2.Image = global::Control_Empleados.Properties.Resources.delete__1_;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
@@ -652,164 +810,6 @@ namespace Control_Empleados.Presentacion
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnGuardarPersonal
-            // 
-            this.btnGuardarPersonal.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnGuardarPersonal.BackgroundColor = System.Drawing.Color.MidnightBlue;
-            this.btnGuardarPersonal.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardarPersonal.BorderRadius = 20;
-            this.btnGuardarPersonal.BorderSize = 0;
-            this.btnGuardarPersonal.FlatAppearance.BorderSize = 0;
-            this.btnGuardarPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarPersonal.Location = new System.Drawing.Point(3, 3);
-            this.btnGuardarPersonal.Name = "btnGuardarPersonal";
-            this.btnGuardarPersonal.Size = new System.Drawing.Size(150, 61);
-            this.btnGuardarPersonal.TabIndex = 0;
-            this.btnGuardarPersonal.Text = "GUARDAR";
-            this.btnGuardarPersonal.TextColor = System.Drawing.Color.White;
-            this.btnGuardarPersonal.UseVisualStyleBackColor = false;
-            this.btnGuardarPersonal.Click += new System.EventHandler(this.btnGuardarPersonal_Click);
-            // 
-            // btnActualizarPersonal
-            // 
-            this.btnActualizarPersonal.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnActualizarPersonal.BackgroundColor = System.Drawing.Color.MidnightBlue;
-            this.btnActualizarPersonal.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnActualizarPersonal.BorderRadius = 20;
-            this.btnActualizarPersonal.BorderSize = 0;
-            this.btnActualizarPersonal.FlatAppearance.BorderSize = 0;
-            this.btnActualizarPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarPersonal.Location = new System.Drawing.Point(159, 3);
-            this.btnActualizarPersonal.Name = "btnActualizarPersonal";
-            this.btnActualizarPersonal.Size = new System.Drawing.Size(161, 61);
-            this.btnActualizarPersonal.TabIndex = 1;
-            this.btnActualizarPersonal.Text = "ACTUALIZAR";
-            this.btnActualizarPersonal.TextColor = System.Drawing.Color.White;
-            this.btnActualizarPersonal.UseVisualStyleBackColor = false;
-            this.btnActualizarPersonal.Click += new System.EventHandler(this.btnActualizarPersonal_Click);
-            // 
-            // btnGuardarCargo
-            // 
-            this.btnGuardarCargo.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnGuardarCargo.BackgroundColor = System.Drawing.Color.MidnightBlue;
-            this.btnGuardarCargo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardarCargo.BorderRadius = 0;
-            this.btnGuardarCargo.BorderSize = 0;
-            this.btnGuardarCargo.FlatAppearance.BorderSize = 0;
-            this.btnGuardarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarCargo.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCargo.Location = new System.Drawing.Point(3, 3);
-            this.btnGuardarCargo.Name = "btnGuardarCargo";
-            this.btnGuardarCargo.Size = new System.Drawing.Size(150, 61);
-            this.btnGuardarCargo.TabIndex = 0;
-            this.btnGuardarCargo.Text = "GUARDAR";
-            this.btnGuardarCargo.TextColor = System.Drawing.Color.White;
-            this.btnGuardarCargo.UseVisualStyleBackColor = false;
-            this.btnGuardarCargo.Click += new System.EventHandler(this.btnGuardarCargo_Click);
-            // 
-            // btnActualizarCargo
-            // 
-            this.btnActualizarCargo.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnActualizarCargo.BackgroundColor = System.Drawing.Color.MidnightBlue;
-            this.btnActualizarCargo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnActualizarCargo.BorderRadius = 0;
-            this.btnActualizarCargo.BorderSize = 0;
-            this.btnActualizarCargo.FlatAppearance.BorderSize = 0;
-            this.btnActualizarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarCargo.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarCargo.Location = new System.Drawing.Point(159, 3);
-            this.btnActualizarCargo.Name = "btnActualizarCargo";
-            this.btnActualizarCargo.Size = new System.Drawing.Size(161, 61);
-            this.btnActualizarCargo.TabIndex = 1;
-            this.btnActualizarCargo.Text = "ACTUALIZAR";
-            this.btnActualizarCargo.TextColor = System.Drawing.Color.White;
-            this.btnActualizarCargo.UseVisualStyleBackColor = false;
-            this.btnActualizarCargo.Click += new System.EventHandler(this.btnActualizarCargo_Click);
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnInicio.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnInicio.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnInicio.BorderRadius = 20;
-            this.btnInicio.BorderSize = 0;
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.Color.White;
-            this.btnInicio.Location = new System.Drawing.Point(3, 14);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(150, 40);
-            this.btnInicio.TabIndex = 1;
-            this.btnInicio.Text = "Inicio";
-            this.btnInicio.TextColor = System.Drawing.Color.White;
-            this.btnInicio.UseVisualStyleBackColor = false;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-            // 
-            // btnFinal
-            // 
-            this.btnFinal.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnFinal.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnFinal.BorderRadius = 20;
-            this.btnFinal.BorderSize = 0;
-            this.btnFinal.FlatAppearance.BorderSize = 0;
-            this.btnFinal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinal.ForeColor = System.Drawing.Color.White;
-            this.btnFinal.Location = new System.Drawing.Point(159, 14);
-            this.btnFinal.Name = "btnFinal";
-            this.btnFinal.Size = new System.Drawing.Size(150, 40);
-            this.btnFinal.TabIndex = 0;
-            this.btnFinal.Text = "Final";
-            this.btnFinal.TextColor = System.Drawing.Color.White;
-            this.btnFinal.UseVisualStyleBackColor = false;
-            this.btnFinal.Click += new System.EventHandler(this.btnFinal_Click);
-            // 
-            // btnAnterior
-            // 
-            this.btnAnterior.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnAnterior.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnAnterior.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAnterior.BorderRadius = 20;
-            this.btnAnterior.BorderSize = 0;
-            this.btnAnterior.FlatAppearance.BorderSize = 0;
-            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.ForeColor = System.Drawing.Color.White;
-            this.btnAnterior.Location = new System.Drawing.Point(12, 14);
-            this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(150, 40);
-            this.btnAnterior.TabIndex = 1;
-            this.btnAnterior.Text = "Anterior";
-            this.btnAnterior.TextColor = System.Drawing.Color.White;
-            this.btnAnterior.UseVisualStyleBackColor = false;
-            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
-            // 
-            // btnSiguiente
-            // 
-            this.btnSiguiente.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSiguiente.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSiguiente.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSiguiente.BorderRadius = 20;
-            this.btnSiguiente.BorderSize = 0;
-            this.btnSiguiente.FlatAppearance.BorderSize = 0;
-            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.ForeColor = System.Drawing.Color.White;
-            this.btnSiguiente.Location = new System.Drawing.Point(250, 14);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(150, 40);
-            this.btnSiguiente.TabIndex = 0;
-            this.btnSiguiente.Text = "Siguiente";
-            this.btnSiguiente.TextColor = System.Drawing.Color.White;
-            this.btnSiguiente.UseVisualStyleBackColor = false;
-            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // Personal
             // 

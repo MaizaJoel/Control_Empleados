@@ -85,7 +85,7 @@ namespace Control_Empleados.Presentacion
         private void ObtenerIdUsuario()
         {
             DUsuarios usuarios = new DUsuarios();
-            usuarios.ObtenerUsuario(ref IdUsuario, txtUsuario.Text);
+            usuarios.ObtenerIdUsuario(ref IdUsuario, txtUsuario.Text);
         }
         private void InsertarPermisos()
         {

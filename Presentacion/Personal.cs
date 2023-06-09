@@ -36,7 +36,8 @@ namespace Control_Empleados.Presentacion
             panelRegistros.Visible = true;
             panelRegistros.Dock = DockStyle.Fill;
             btnGuardarPersonal.Visible = true;
-            btnActualizarPersonal.Visible = false;            
+            btnActualizarPersonal.Visible = false;
+            //txtSueldoxHora.Enabled = false;
             Limpiar();
         }
         private void LocalizarDtvCargos()
@@ -85,7 +86,8 @@ namespace Control_Empleados.Presentacion
             parametros.Cedula = txtCedula.Text;
             parametros.Direccion = txtDireccion.Text;
             parametros.IdCargo = idCargo;
-            parametros.SueldoPorHora = Convert.ToDouble(txtSueldoxHora.Text);
+            
+            parametros.SueldoPorHora = Convert.ToDouble(txtSueldoxHora.Text);            
             if (funcion.InsertarPersonal(parametros) == true)
             {
                 ReiniciarPaginado();
@@ -234,13 +236,14 @@ namespace Control_Empleados.Presentacion
         {
             EditarCargos();
         }
+
         private void EditarCargos()
         {
             LCargos parametros = new LCargos();
             DCargos funcion = new DCargos();
             parametros.IdCargo = idCargo;
             parametros.Cargo = txtCargoN.Text;
-            parametros.SueldoPorHora = Convert.ToDouble(txtSueldoN.Text);
+            parametros.SueldoPorHora = Convert.ToDouble(txtSueldoN.Text);            
             if (funcion.EditarCargo(parametros) == true)
             {
                 txtCargo.Clear();
@@ -252,8 +255,9 @@ namespace Control_Empleados.Presentacion
         private void Personal_Load(object sender, EventArgs e)
         {
             ReiniciarPaginado();
-            MostrarPersonal();
+            MostrarPersonal();            
         }
+
         private void ReiniciarPaginado()
         {
             desde = 1;
@@ -307,6 +311,7 @@ namespace Control_Empleados.Presentacion
                 MostrarPersonal();
             }
         }
+
         private void ObtenerPersonalEditar()
         {
             idPersonal = Convert.ToInt32(dataGridViewListadoPersonal.SelectedCells[2].Value);
@@ -360,6 +365,7 @@ namespace Control_Empleados.Presentacion
         {
             EditarPersonal();
         }
+
         private void EditarPersonal()
         {
             LPersonal parametros = new LPersonal();
@@ -377,6 +383,7 @@ namespace Control_Empleados.Presentacion
             }
 
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             DiseñarDgvPersonal();
@@ -474,6 +481,7 @@ namespace Control_Empleados.Presentacion
         {
             BuscarPersonal();
         }
+
         private void BuscarPersonal()
         {
             DataTable dt = new DataTable();

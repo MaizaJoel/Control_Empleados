@@ -30,3 +30,5 @@ C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.csproj.
 C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.csproj.CoreCompileInputs.cache
 C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.exe
 C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.pdb
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.AsistenteDeInstalación.EleccionServidor.resources
+C:\Users\MaizaJoel\Desktop\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.AsistenteDeInstalación.InstalacionBD.resources

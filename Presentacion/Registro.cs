@@ -124,5 +124,15 @@ namespace Control_Empleados.Presentacion
         {
             ConfirmarSalida();
         }
+
+        private void txtCedula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Dimensiones.SoloNumeros(txtCedula, e);
+        }
+
+        private void txtAdelanto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Dimensiones.SoloNumeros(txtAdelanto, e);
+        }
     }
 }

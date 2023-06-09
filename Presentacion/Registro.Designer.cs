@@ -64,9 +64,9 @@ namespace Control_Empleados.Presentacion
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelAdelanto = new System.Windows.Forms.Panel();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.txtAdelanto = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timerHora = new System.Windows.Forms.Timer(this.components);
+            this.txtAdelanto = new System.Windows.Forms.TextBox();
             this.Panel6.SuspendLayout();
             this.Panel9.SuspendLayout();
             this.panelIngreso.SuspendLayout();
@@ -395,6 +395,7 @@ namespace Control_Empleados.Presentacion
             this.txtCedula.TabIndex = 463;
             this.txtCedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
+            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCedula_KeyPress);
             // 
             // PictureBox4
             // 
@@ -520,13 +521,13 @@ namespace Control_Empleados.Presentacion
             // 
             // panelAdelanto
             // 
-            this.panelAdelanto.Controls.Add(this.btnConfirmar);
             this.panelAdelanto.Controls.Add(this.txtAdelanto);
+            this.panelAdelanto.Controls.Add(this.btnConfirmar);
             this.panelAdelanto.Controls.Add(this.label1);
             this.panelAdelanto.Location = new System.Drawing.Point(5, 181);
             this.panelAdelanto.Margin = new System.Windows.Forms.Padding(4);
             this.panelAdelanto.Name = "panelAdelanto";
-            this.panelAdelanto.Size = new System.Drawing.Size(254, 143);
+            this.panelAdelanto.Size = new System.Drawing.Size(254, 119);
             this.panelAdelanto.TabIndex = 615;
             this.panelAdelanto.Visible = false;
             // 
@@ -542,26 +543,13 @@ namespace Control_Empleados.Presentacion
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar.Location = new System.Drawing.Point(6, 83);
+            this.btnConfirmar.Location = new System.Drawing.Point(182, 61);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(68, 56);
             this.btnConfirmar.TabIndex = 611;
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
-            // 
-            // txtAdelanto
-            // 
-            this.txtAdelanto.BackColor = System.Drawing.Color.White;
-            this.txtAdelanto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtAdelanto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdelanto.ForeColor = System.Drawing.Color.Black;
-            this.txtAdelanto.Location = new System.Drawing.Point(0, 36);
-            this.txtAdelanto.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAdelanto.Name = "txtAdelanto";
-            this.txtAdelanto.Size = new System.Drawing.Size(254, 43);
-            this.txtAdelanto.TabIndex = 463;
-            this.txtAdelanto.Text = "";
             // 
             // label1
             // 
@@ -581,6 +569,15 @@ namespace Control_Empleados.Presentacion
             this.timerHora.Enabled = true;
             this.timerHora.Tick += new System.EventHandler(this.timerHora_Tick);
             // 
+            // txtAdelanto
+            // 
+            this.txtAdelanto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAdelanto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdelanto.Location = new System.Drawing.Point(0, 36);
+            this.txtAdelanto.Name = "txtAdelanto";
+            this.txtAdelanto.Size = new System.Drawing.Size(254, 27);
+            this.txtAdelanto.TabIndex = 612;
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -593,7 +590,7 @@ namespace Control_Empleados.Presentacion
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TomarAsistencias";            
+            this.Text = "TomarAsistencias";
             this.Panel6.ResumeLayout(false);
             this.Panel9.ResumeLayout(false);
             this.panelIngreso.ResumeLayout(false);
@@ -608,6 +605,7 @@ namespace Control_Empleados.Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             this.panelAdelanto.ResumeLayout(false);
+            this.panelAdelanto.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -647,9 +645,9 @@ namespace Control_Empleados.Presentacion
         internal System.Windows.Forms.Label Label5;
         private System.Windows.Forms.Panel panelAdelanto;
         internal System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.RichTextBox txtAdelanto;
         internal System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timerHora;
         internal System.Windows.Forms.PictureBox PictureBox2;
+        private System.Windows.Forms.TextBox txtAdelanto;
     }
 }

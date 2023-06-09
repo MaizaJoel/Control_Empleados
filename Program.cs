@@ -16,7 +16,7 @@ namespace Control_Empleados
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Presentacion.MenuPrincipal());
+            Application.Run(new Presentacion.Login());
         }
     }
 }
