@@ -304,6 +304,40 @@ namespace Control_Empleados.UI
 
     public class UIForm : Form
     {
-        
+
     }
+
+
+    //    public class CustomTextBox : TextBox
+    //{
+    //    private const int CaretThickness = 10; // Desired caret thickness in pixels
+
+    //    protected override void OnPaint(PaintEventArgs e)
+    //    {
+    //        base.OnPaint(e);
+
+    //        if (Focused)
+    //        {
+    //            using (var caretPen = new Pen(ForeColor, CaretThickness))
+    //            {
+    //                // Calculate caret position
+    //                var caretX = GetCaretXPosition();
+
+    //                // Draw the custom caret
+    //                e.Graphics.DrawLine(caretPen, caretX, 0, caretX, Height);
+    //            }
+    //        }
+    //    }
+
+    //    private int GetCaretXPosition()
+    //    {
+    //        int charIndex = SelectionStart;
+    //        if (charIndex <= 0)
+    //            return 0;
+
+    //        var charWidth = TextRenderer.MeasureText(Text.Substring(0, charIndex), Font).Width;
+    //        return Padding.Left + charWidth;
+    //    }
+    //}
+
 }

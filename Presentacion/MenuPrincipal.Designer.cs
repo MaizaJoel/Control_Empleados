@@ -37,7 +37,6 @@ namespace Control_Empleados.Presentacion
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.btnEstaciones = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -160,7 +159,6 @@ namespace Control_Empleados.Presentacion
             // panel18
             // 
             this.panel18.Controls.Add(this.btnEstaciones);
-            this.panel18.Controls.Add(this.panel21);
             this.panel18.Controls.Add(this.panel19);
             this.panel18.Controls.Add(this.panel20);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
@@ -184,20 +182,11 @@ namespace Control_Empleados.Presentacion
             this.btnEstaciones.Location = new System.Drawing.Point(13, 12);
             this.btnEstaciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstaciones.Name = "btnEstaciones";
-            this.btnEstaciones.Size = new System.Drawing.Size(195, 68);
+            this.btnEstaciones.Size = new System.Drawing.Size(208, 68);
             this.btnEstaciones.TabIndex = 3;
             this.btnEstaciones.Text = "Estaciones";
             this.btnEstaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEstaciones.UseVisualStyleBackColor = false;
-            // 
-            // panel21
-            // 
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel21.Location = new System.Drawing.Point(208, 12);
-            this.panel21.Margin = new System.Windows.Forms.Padding(4);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(13, 68);
-            this.panel21.TabIndex = 4;
             // 
             // panel19
             // 
@@ -586,7 +575,6 @@ namespace Control_Empleados.Presentacion
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Panel panel22;
