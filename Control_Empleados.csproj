@@ -78,6 +78,12 @@
     <Compile Include="Presentacion\AsistenteDeInstalación\InstalacionBD.Designer.cs">
       <DependentUpon>InstalacionBD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\AsistenteDeInstalación\UsuarioPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AsistenteDeInstalación\UsuarioPrincipal.Designer.cs">
+      <DependentUpon>UsuarioPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\AsistenteDeInstalación\InstalacionBD.resx">
       <DependentUpon>InstalacionBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\AsistenteDeInstalación\UsuarioPrincipal.resx">
+      <DependentUpon>UsuarioPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\ControlUsuarios.resx">
       <DependentUpon>ControlUsuarios.cs</DependentUpon>

@@ -155,6 +155,7 @@ namespace Control_Empleados.Datos
             }
             catch (Exception e)
             {
+                //Si no usuario 0
                 id = 0;
             }
             finally

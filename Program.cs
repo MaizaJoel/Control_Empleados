@@ -16,7 +16,16 @@ namespace Control_Empleados
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Presentacion.Login());
+            Presentacion.Login frmlogin = new Presentacion.Login();
+            frmlogin.FormClosed += Frmlogin_FormClosed;
+            frmlogin.ShowDialog();
+            Application.Run();
+        }
+
+        private static void Frmlogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+            Application.Exit();
         }
     }
 }

@@ -63,10 +63,10 @@ namespace Control_Empleados.Presentacion
             this.Label5 = new System.Windows.Forms.Label();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelAdelanto = new System.Windows.Forms.Panel();
+            this.txtAdelanto = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timerHora = new System.Windows.Forms.Timer(this.components);
-            this.txtAdelanto = new System.Windows.Forms.TextBox();
             this.Panel6.SuspendLayout();
             this.Panel9.SuspendLayout();
             this.panelIngreso.SuspendLayout();
@@ -531,6 +531,15 @@ namespace Control_Empleados.Presentacion
             this.panelAdelanto.TabIndex = 615;
             this.panelAdelanto.Visible = false;
             // 
+            // txtAdelanto
+            // 
+            this.txtAdelanto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAdelanto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdelanto.Location = new System.Drawing.Point(0, 36);
+            this.txtAdelanto.Name = "txtAdelanto";
+            this.txtAdelanto.Size = new System.Drawing.Size(254, 27);
+            this.txtAdelanto.TabIndex = 612;
+            // 
             // btnConfirmar
             // 
             this.btnConfirmar.BackColor = System.Drawing.Color.Transparent;
@@ -568,15 +577,6 @@ namespace Control_Empleados.Presentacion
             // 
             this.timerHora.Enabled = true;
             this.timerHora.Tick += new System.EventHandler(this.timerHora_Tick);
-            // 
-            // txtAdelanto
-            // 
-            this.txtAdelanto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtAdelanto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdelanto.Location = new System.Drawing.Point(0, 36);
-            this.txtAdelanto.Name = "txtAdelanto";
-            this.txtAdelanto.Size = new System.Drawing.Size(254, 27);
-            this.txtAdelanto.TabIndex = 612;
             // 
             // Registro
             // 

@@ -9,21 +9,24 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ContentAlignment = System.Drawing.ContentAlignment;
 
 namespace Control_Empleados.Presentacion
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
-
+        
         string Usuario;
         int Idusuario;
         int Contador;
@@ -31,24 +34,24 @@ namespace Control_Empleados.Presentacion
 
         private void Login_Load(object sender, EventArgs e)
         {
-            ValidarConexion();
+            ValidarConexion();            
         }
         private void ValidarConexion()
         {
             VerificarConexion();
             if (Indicador == "Correcto")
             {
-                //MostrarUsuarios();
-                //if (Contador == 0)
-                //{
-                //    Dispose();
-                //    UsuarioPrincipal frm = new UsuarioPrincipal();
-                //    frm.ShowDialog();
-                //}
-                //else
-                //{
-                //    CargarUsuarios();
-                //}
+                MostrarUsuarios();
+                if (Contador == 0)
+                {
+                    Dispose();
+                    UsuarioPrincipal usuarioPrincipal = new UsuarioPrincipal();
+                    usuarioPrincipal.ShowDialog();
+                }
+                else
+                {
+                    CargarUsuarios();
+                }
                 CargarUsuarios();
             }
             else
@@ -122,7 +125,7 @@ namespace Control_Empleados.Presentacion
 
         private void MiEventoPictureBox(object sender, EventArgs e)
         {
-            //Capturar imagen perfil usuario
+            //Capturar imagen perfil usuario //Tag se lo toma de la propiedad del picturebox (tag)
             Usuario = Convert.ToString(((PictureBox)sender).Tag);
             MostrarPanelLogin();
         }
@@ -141,6 +144,8 @@ namespace Control_Empleados.Presentacion
             panelLogin.Location = new Point((Width - panelLogin.Width)/2,(Height - panelLogin.Height)/2);
             
             PanelUsuarios.Visible = false;
+            //focus en txt
+            this.ActiveControl = txtcontraseña;
         }
 
         private void MostrarUsuarios()
@@ -149,6 +154,95 @@ namespace Control_Empleados.Presentacion
             DUsuarios dUsuarios = new DUsuarios();
             dUsuarios.MostrarUsuarios(ref dt);
             Contador = dt.Rows.Count;
+        }
+
+        private void txtcontraseña_TextChanged(object sender, EventArgs e)
+        {
+            ValidarUsuarios();
+        }
+
+        private void ValidarUsuarios()
+        {
+            LUsuarios usuarios = new LUsuarios();
+            DUsuarios dUsuarios = new DUsuarios();
+            usuarios.Password = txtcontraseña.Text;
+            usuarios.Login = Usuario;
+            dUsuarios.ValidarUsuario(usuarios, ref Idusuario);
+
+            if (Idusuario > 0)
+            {
+                Dispose();
+                MenuPrincipal frm = new MenuPrincipal();
+                frm.ShowDialog();
+            }
+        }
+
+        private void uiButton13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ERROR CONTRASEÑA INCORRECTA", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "1";
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "2";
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "3";
+        }
+
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "4";
+        }
+
+        private void uiButton5_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "5";
+        }
+
+        private void uiButton6_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "6";
+        }
+
+        private void uiButton7_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "7";
+        }
+
+        private void uiButton8_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "8";
+        }
+
+        private void uiButton9_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "9";
+        }
+
+        private void uiButton0_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Text += "0";
+        }
+
+        private void uiButtonBorrarTodo_Click(object sender, EventArgs e)
+        {
+            txtcontraseña.Clear();
+        }
+
+        private void uiButtonBorrarIndividual_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtcontraseña.Text))
+            {
+                txtcontraseña.Text = txtcontraseña.Text.Remove(txtcontraseña.Text.Length - 1);
+            }
         }
     }
 }

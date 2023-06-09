@@ -122,8 +122,9 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.Thistle;
+            this.label5.BackColor = System.Drawing.Color.PowderBlue;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(40, 335);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(336, 109);
@@ -134,7 +135,7 @@
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.Thistle;
+            this.label6.BackColor = System.Drawing.Color.PowderBlue;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(55, 606);
             this.label6.Name = "label6";

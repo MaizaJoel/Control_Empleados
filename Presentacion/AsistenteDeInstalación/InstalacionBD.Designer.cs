@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstalacionBD));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_nombre_login = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblTiempo = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblMin = new System.Windows.Forms.Label();
-            this.lblSeg = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWarning = new System.Windows.Forms.PictureBox();
             this.uiPictureBox1 = new Control_Empleados.UI.UIPictureBox();
-            this.min = new System.Windows.Forms.Label();
-            this.seg = new System.Windows.Forms.Label();
+            this.lbl_nombre_login = new System.Windows.Forms.Label();
+            this.panelInstalador = new System.Windows.Forms.Panel();
+            this.panelDetallesInstalador = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.Label15 = new System.Windows.Forms.Label();
@@ -73,18 +65,31 @@
             this.lblBasededatos = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox1)).BeginInit();
+            this.panelInstalador.SuspendLayout();
+            this.panelDetallesInstalador.SuspendLayout();
             this.panel8.SuspendLayout();
             this.GroupBox6.SuspendLayout();
             this.Panel10.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.GroupBox2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,123 +101,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1755, 144);
             this.panel1.TabIndex = 2;
-            // 
-            // lbl_nombre_login
-            // 
-            this.lbl_nombre_login.Font = new System.Drawing.Font("Vivaldi", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombre_login.Location = new System.Drawing.Point(3, 5);
-            this.lbl_nombre_login.Name = "lbl_nombre_login";
-            this.lbl_nombre_login.Size = new System.Drawing.Size(255, 136);
-            this.lbl_nombre_login.TabIndex = 1;
-            this.lbl_nombre_login.Text = "Freesias \r\nce";
-            this.lbl_nombre_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.lblInfo);
-            this.panel2.Controls.Add(this.pictureBoxWarning);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(241, 204);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 659);
-            this.panel2.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(500, 96);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "INSTALAR SERVIDOR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // lblInfo
-            // 
-            this.lblInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo.Location = new System.Drawing.Point(0, 220);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(500, 143);
-            this.lblInfo.TabIndex = 2;
-            this.lblInfo.Text = "NO CIERRE ESTA VENTANA, SE CERRARÁ AUTOMÁTICAMNETE AL FINALIZAR";
-            this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.lblTiempo);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 363);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(500, 100);
-            this.panel3.TabIndex = 3;
-            // 
-            // lblTiempo
-            // 
-            this.lblTiempo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempo.Location = new System.Drawing.Point(0, 0);
-            this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(237, 100);
-            this.lblTiempo.TabIndex = 0;
-            this.lblTiempo.Text = "TIEMPO ESTIMADO 6:00 MINUTOS\r\n";
-            this.lblTiempo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.min);
-            this.panel4.Controls.Add(this.seg);
-            this.panel4.Controls.Add(this.lblSeg);
-            this.panel4.Controls.Add(this.lblMin);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(237, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(263, 100);
-            this.panel4.TabIndex = 1;
-            // 
-            // lblMin
-            // 
-            this.lblMin.AutoSize = true;
-            this.lblMin.Location = new System.Drawing.Point(55, 16);
-            this.lblMin.Name = "lblMin";
-            this.lblMin.Size = new System.Drawing.Size(53, 16);
-            this.lblMin.TabIndex = 0;
-            this.lblMin.Text = "minutos";
-            // 
-            // lblSeg
-            // 
-            this.lblSeg.AutoSize = true;
-            this.lblSeg.Location = new System.Drawing.Point(159, 16);
-            this.lblSeg.Name = "lblSeg";
-            this.lblSeg.Size = new System.Drawing.Size(67, 16);
-            this.lblSeg.TabIndex = 1;
-            this.lblSeg.Text = "segundos";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Control_Empleados.Properties.Resources.loader;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 463);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 196);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBoxWarning
-            // 
-            this.pictureBoxWarning.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBoxWarning.Image = global::Control_Empleados.Properties.Resources.warning;
-            this.pictureBoxWarning.Location = new System.Drawing.Point(0, 96);
-            this.pictureBoxWarning.Name = "pictureBoxWarning";
-            this.pictureBoxWarning.Size = new System.Drawing.Size(500, 124);
-            this.pictureBoxWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxWarning.TabIndex = 1;
-            this.pictureBoxWarning.TabStop = false;
             // 
             // uiPictureBox1
             // 
@@ -230,29 +118,48 @@
             this.uiPictureBox1.TabIndex = 2;
             this.uiPictureBox1.TabStop = false;
             // 
-            // min
+            // lbl_nombre_login
             // 
-            this.min.AutoSize = true;
-            this.min.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.min.ForeColor = System.Drawing.Color.Black;
-            this.min.Location = new System.Drawing.Point(64, 50);
-            this.min.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.min.Name = "min";
-            this.min.Size = new System.Drawing.Size(34, 25);
-            this.min.TabIndex = 619;
-            this.min.Text = "00";
+            this.lbl_nombre_login.Font = new System.Drawing.Font("Vivaldi", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre_login.Location = new System.Drawing.Point(3, 5);
+            this.lbl_nombre_login.Name = "lbl_nombre_login";
+            this.lbl_nombre_login.Size = new System.Drawing.Size(255, 136);
+            this.lbl_nombre_login.TabIndex = 1;
+            this.lbl_nombre_login.Text = "Freesias \r\nce";
+            this.lbl_nombre_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // seg
+            // panelInstalador
             // 
-            this.seg.AutoSize = true;
-            this.seg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seg.ForeColor = System.Drawing.Color.Black;
-            this.seg.Location = new System.Drawing.Point(176, 50);
-            this.seg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.seg.Name = "seg";
-            this.seg.Size = new System.Drawing.Size(34, 25);
-            this.seg.TabIndex = 620;
-            this.seg.Text = "00";
+            this.panelInstalador.Controls.Add(this.panelDetallesInstalador);
+            this.panelInstalador.Controls.Add(this.button1);
+            this.panelInstalador.Location = new System.Drawing.Point(241, 204);
+            this.panelInstalador.Name = "panelInstalador";
+            this.panelInstalador.Size = new System.Drawing.Size(500, 659);
+            this.panelInstalador.TabIndex = 3;
+            // 
+            // panelDetallesInstalador
+            // 
+            this.panelDetallesInstalador.Controls.Add(this.panel5);
+            this.panelDetallesInstalador.Controls.Add(this.label5);
+            this.panelDetallesInstalador.Controls.Add(this.pictureBox2);
+            this.panelDetallesInstalador.Controls.Add(this.label10);
+            this.panelDetallesInstalador.Controls.Add(this.pictureBox3);
+            this.panelDetallesInstalador.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDetallesInstalador.Location = new System.Drawing.Point(0, 96);
+            this.panelDetallesInstalador.Name = "panelDetallesInstalador";
+            this.panelDetallesInstalador.Size = new System.Drawing.Size(500, 560);
+            this.panelDetallesInstalador.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(500, 96);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "INSTALAR SERVIDOR";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel8
             // 
@@ -593,24 +500,135 @@
             this.Label8.TabIndex = 618;
             this.Label8.Text = "Nombre de Instancia:";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 10;
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 10;
+            // 
+            // timer4
+            // 
+            this.timer4.Interval = 10;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(237, 267);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(263, 293);
+            this.panel5.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(64, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 25);
+            this.label1.TabIndex = 619;
+            this.label1.Text = "00";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(176, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 25);
+            this.label2.TabIndex = 620;
+            this.label2.Text = "00";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(159, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "segundos";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(55, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 16);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "minutos";
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(0, 267);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(237, 293);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "TIEMPO ESTIMADO 6:00 MINUTOS\r\n";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Control_Empleados.Properties.Resources.loader;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 267);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(500, 293);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(0, 124);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(500, 143);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "NO CIERRE ESTA VENTANA, SE CERRARÁ AUTOMÁTICAMNETE AL FINALIZAR";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox3.Image = global::Control_Empleados.Properties.Resources.warning;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(500, 124);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // InstalacionBD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1755, 895);
+            this.ClientSize = new System.Drawing.Size(1755, 935);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelInstalador);
             this.Controls.Add(this.panel1);
             this.Name = "InstalacionBD";
             this.Text = "InstalacionBD";
+            this.Load += new System.EventHandler(this.InstalacionBD_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiPictureBox1)).EndInit();
+            this.panelInstalador.ResumeLayout(false);
+            this.panelDetallesInstalador.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.GroupBox6.ResumeLayout(false);
@@ -619,6 +637,10 @@
             this.Panel10.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -628,18 +650,9 @@
         private System.Windows.Forms.Panel panel1;
         private UI.UIPictureBox uiPictureBox1;
         private System.Windows.Forms.Label lbl_nombre_login;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBoxWarning;
+        private System.Windows.Forms.Panel panelInstalador;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblTiempo;
-        private System.Windows.Forms.Label lblInfo;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblSeg;
-        private System.Windows.Forms.Label lblMin;
-        internal System.Windows.Forms.Label min;
-        internal System.Windows.Forms.Label seg;
+        private System.Windows.Forms.Panel panelDetallesInstalador;
         internal System.Windows.Forms.Panel panel8;
         internal System.Windows.Forms.TextBox txtusuario;
         internal System.Windows.Forms.Label Label15;
@@ -669,5 +682,18 @@
         internal System.Windows.Forms.Label lblBasededatos;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label8;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Panel panel5;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

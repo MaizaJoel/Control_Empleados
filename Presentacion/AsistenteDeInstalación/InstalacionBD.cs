@@ -16,5 +16,27 @@ namespace Control_Empleados.Presentacion.AsistenteDeInstalación
         {
             InitializeComponent();
         }
+
+        string NombreEquipo;
+
+        private void InstalacionBD_Load(object sender, EventArgs e)
+        {
+            CentrarPaneles();
+            Reemplazar();
+        }
+
+        private void CentrarPaneles()
+        {
+            panelInstalador.Location = new Point((Width - panelInstalador.Width) / 2, (Height - panelInstalador.Height) / 2);
+            NombreEquipo = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            Cursor = Cursors.WaitCursor;
+            panelDetallesInstalador.Visible = false;
+            panelDetallesInstalador.Dock = DockStyle.None;
+        }
+
+        private void Reemplazar()
+        {
+
+        }
     }
 }
