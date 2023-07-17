@@ -53,6 +53,8 @@
     <Compile Include="Datos\DPermisos.cs" />
     <Compile Include="Datos\DPersonal.cs" />
     <Compile Include="Datos\DUsuarios.cs" />
+    <Compile Include="Logica\Desencriptacion.cs" />
+    <Compile Include="Logica\Encriptacion.cs" />
     <Compile Include="Logica\LAsistencia.cs" />
     <Compile Include="Logica\Dimensiones.cs" />
     <Compile Include="Logica\LCargos.cs" />
