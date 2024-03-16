@@ -39,6 +39,7 @@ namespace Control_Empleados.Presentacion
             this.EliminarP = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelRegistro = new System.Windows.Forms.Panel();
             this.panelIconos = new System.Windows.Forms.Panel();
+            this.btnVolverIconos = new Control_Empleados.UI.UIButton();
             this.pictureBoxAgregarIcono = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox04 = new System.Windows.Forms.PictureBox();
@@ -49,12 +50,16 @@ namespace Control_Empleados.Presentacion
             this.pictureBox02 = new System.Windows.Forms.PictureBox();
             this.pictureBox03 = new System.Windows.Forms.PictureBox();
             this.lblElegirIcono = new System.Windows.Forms.Label();
+            this.pictureBoxIcono = new Control_Empleados.UI.UIPictureBox();
             this.flowLayoutBotonesGAV = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnGuardarUsuario = new Control_Empleados.UI.UIButton();
+            this.btnActualizarUsuario = new Control_Empleados.UI.UIButton();
             this.btnVolverUsuario = new System.Windows.Forms.Button();
             this.panelPermisos = new System.Windows.Forms.Panel();
             this.dataGridViewListadoModulos = new System.Windows.Forms.DataGridView();
             this.Marcar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
+            this.BotonInformación = new Control_Empleados.UI.UIButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,11 +69,6 @@ namespace Control_Empleados.Presentacion
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.openFileDialogIcono = new System.Windows.Forms.OpenFileDialog();
-            this.btnVolverIconos = new Control_Empleados.UI.UIButton();
-            this.pictureBoxIcono = new Control_Empleados.UI.UIPictureBox();
-            this.btnGuardarUsuario = new Control_Empleados.UI.UIButton();
-            this.btnActualizarUsuario = new Control_Empleados.UI.UIButton();
-            this.BotonInformación = new Control_Empleados.UI.UIButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,10 +84,10 @@ namespace Control_Empleados.Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcono)).BeginInit();
             this.flowLayoutBotonesGAV.SuspendLayout();
             this.panelPermisos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListadoModulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcono)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -143,6 +143,7 @@ namespace Control_Empleados.Presentacion
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(261, 15);
             this.txtBuscar.TabIndex = 0;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // dataGridViewListadoUsuarios
             // 
@@ -169,6 +170,7 @@ namespace Control_Empleados.Presentacion
             this.dataGridViewListadoUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewListadoUsuarios.Size = new System.Drawing.Size(1059, 723);
             this.dataGridViewListadoUsuarios.TabIndex = 2;
+            this.dataGridViewListadoUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListadoUsuarios_CellClick);
             // 
             // EditarP
             // 
@@ -223,6 +225,25 @@ namespace Control_Empleados.Presentacion
             this.panelIconos.Size = new System.Drawing.Size(598, 462);
             this.panelIconos.TabIndex = 27;
             this.panelIconos.Visible = false;
+            // 
+            // btnVolverIconos
+            // 
+            this.btnVolverIconos.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnVolverIconos.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnVolverIconos.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVolverIconos.BorderRadius = 20;
+            this.btnVolverIconos.BorderSize = 0;
+            this.btnVolverIconos.FlatAppearance.BorderSize = 0;
+            this.btnVolverIconos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolverIconos.ForeColor = System.Drawing.Color.White;
+            this.btnVolverIconos.Location = new System.Drawing.Point(225, 381);
+            this.btnVolverIconos.Name = "btnVolverIconos";
+            this.btnVolverIconos.Size = new System.Drawing.Size(94, 33);
+            this.btnVolverIconos.TabIndex = 3;
+            this.btnVolverIconos.Text = "Volver";
+            this.btnVolverIconos.TextColor = System.Drawing.Color.White;
+            this.btnVolverIconos.UseVisualStyleBackColor = false;
+            this.btnVolverIconos.Click += new System.EventHandler(this.btnVolverIconos_Click);
             // 
             // pictureBoxAgregarIcono
             // 
@@ -332,6 +353,22 @@ namespace Control_Empleados.Presentacion
             this.lblElegirIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblElegirIcono.Click += new System.EventHandler(this.lblElegirIcono_Click);
             // 
+            // pictureBoxIcono
+            // 
+            this.pictureBoxIcono.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pictureBoxIcono.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBoxIcono.BorderColor2 = System.Drawing.Color.HotPink;
+            this.pictureBoxIcono.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pictureBoxIcono.BorderSize = 2;
+            this.pictureBoxIcono.GradientAngle = 50F;
+            this.pictureBoxIcono.Location = new System.Drawing.Point(648, 43);
+            this.pictureBoxIcono.Name = "pictureBoxIcono";
+            this.pictureBoxIcono.Size = new System.Drawing.Size(149, 149);
+            this.pictureBoxIcono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIcono.TabIndex = 25;
+            this.pictureBoxIcono.TabStop = false;
+            this.pictureBoxIcono.Click += new System.EventHandler(this.pictureBoxIcono_Click);
+            // 
             // flowLayoutBotonesGAV
             // 
             this.flowLayoutBotonesGAV.Controls.Add(this.btnGuardarUsuario);
@@ -341,6 +378,45 @@ namespace Control_Empleados.Presentacion
             this.flowLayoutBotonesGAV.Name = "flowLayoutBotonesGAV";
             this.flowLayoutBotonesGAV.Size = new System.Drawing.Size(401, 71);
             this.flowLayoutBotonesGAV.TabIndex = 24;
+            // 
+            // btnGuardarUsuario
+            // 
+            this.btnGuardarUsuario.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardarUsuario.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btnGuardarUsuario.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardarUsuario.BorderRadius = 0;
+            this.btnGuardarUsuario.BorderSize = 0;
+            this.btnGuardarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnGuardarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarUsuario.Location = new System.Drawing.Point(3, 3);
+            this.btnGuardarUsuario.Name = "btnGuardarUsuario";
+            this.btnGuardarUsuario.Size = new System.Drawing.Size(150, 61);
+            this.btnGuardarUsuario.TabIndex = 0;
+            this.btnGuardarUsuario.Text = "GUARDAR";
+            this.btnGuardarUsuario.TextColor = System.Drawing.Color.White;
+            this.btnGuardarUsuario.UseVisualStyleBackColor = false;
+            this.btnGuardarUsuario.Click += new System.EventHandler(this.btnGuardarUsuario_Click);
+            // 
+            // btnActualizarUsuario
+            // 
+            this.btnActualizarUsuario.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnActualizarUsuario.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btnActualizarUsuario.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnActualizarUsuario.BorderRadius = 0;
+            this.btnActualizarUsuario.BorderSize = 0;
+            this.btnActualizarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnActualizarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarUsuario.Location = new System.Drawing.Point(159, 3);
+            this.btnActualizarUsuario.Name = "btnActualizarUsuario";
+            this.btnActualizarUsuario.Size = new System.Drawing.Size(161, 61);
+            this.btnActualizarUsuario.TabIndex = 1;
+            this.btnActualizarUsuario.Text = "ACTUALIZAR";
+            this.btnActualizarUsuario.TextColor = System.Drawing.Color.White;
+            this.btnActualizarUsuario.UseVisualStyleBackColor = false;
+            this.btnActualizarUsuario.Click += new System.EventHandler(this.btnActualizarUsuario_Click);
             // 
             // btnVolverUsuario
             // 
@@ -413,6 +489,26 @@ namespace Control_Empleados.Presentacion
             this.label4.Size = new System.Drawing.Size(117, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "PERMISOS";
+            // 
+            // BotonInformación
+            // 
+            this.BotonInformación.BackColor = System.Drawing.Color.Transparent;
+            this.BotonInformación.BackgroundColor = System.Drawing.Color.Transparent;
+            this.BotonInformación.BackgroundImage = global::Control_Empleados.Properties.Resources.i2;
+            this.BotonInformación.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BotonInformación.BorderColor = System.Drawing.Color.Transparent;
+            this.BotonInformación.BorderRadius = 27;
+            this.BotonInformación.BorderSize = 0;
+            this.BotonInformación.FlatAppearance.BorderSize = 0;
+            this.BotonInformación.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonInformación.ForeColor = System.Drawing.Color.Transparent;
+            this.BotonInformación.Location = new System.Drawing.Point(515, 157);
+            this.BotonInformación.Name = "BotonInformación";
+            this.BotonInformación.Size = new System.Drawing.Size(43, 41);
+            this.BotonInformación.TabIndex = 6;
+            this.BotonInformación.TextColor = System.Drawing.Color.Transparent;
+            this.BotonInformación.UseVisualStyleBackColor = false;
+            this.BotonInformación.Click += new System.EventHandler(this.BotonInformación_Click);
             // 
             // label3
             // 
@@ -488,99 +584,6 @@ namespace Control_Empleados.Presentacion
             // 
             this.openFileDialogIcono.FileName = "openFileDialog1";
             // 
-            // btnVolverIconos
-            // 
-            this.btnVolverIconos.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnVolverIconos.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnVolverIconos.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnVolverIconos.BorderRadius = 20;
-            this.btnVolverIconos.BorderSize = 0;
-            this.btnVolverIconos.FlatAppearance.BorderSize = 0;
-            this.btnVolverIconos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolverIconos.ForeColor = System.Drawing.Color.White;
-            this.btnVolverIconos.Location = new System.Drawing.Point(225, 381);
-            this.btnVolverIconos.Name = "btnVolverIconos";
-            this.btnVolverIconos.Size = new System.Drawing.Size(94, 33);
-            this.btnVolverIconos.TabIndex = 3;
-            this.btnVolverIconos.Text = "Volver";
-            this.btnVolverIconos.TextColor = System.Drawing.Color.White;
-            this.btnVolverIconos.UseVisualStyleBackColor = false;
-            this.btnVolverIconos.Click += new System.EventHandler(this.btnVolverIconos_Click);
-            // 
-            // pictureBoxIcono
-            // 
-            this.pictureBoxIcono.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pictureBoxIcono.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBoxIcono.BorderColor2 = System.Drawing.Color.HotPink;
-            this.pictureBoxIcono.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.pictureBoxIcono.BorderSize = 2;
-            this.pictureBoxIcono.GradientAngle = 50F;
-            this.pictureBoxIcono.Location = new System.Drawing.Point(648, 43);
-            this.pictureBoxIcono.Name = "pictureBoxIcono";
-            this.pictureBoxIcono.Size = new System.Drawing.Size(149, 149);
-            this.pictureBoxIcono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxIcono.TabIndex = 25;
-            this.pictureBoxIcono.TabStop = false;
-            this.pictureBoxIcono.Click += new System.EventHandler(this.pictureBoxIcono_Click);
-            // 
-            // btnGuardarUsuario
-            // 
-            this.btnGuardarUsuario.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnGuardarUsuario.BackgroundColor = System.Drawing.Color.MidnightBlue;
-            this.btnGuardarUsuario.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardarUsuario.BorderRadius = 0;
-            this.btnGuardarUsuario.BorderSize = 0;
-            this.btnGuardarUsuario.FlatAppearance.BorderSize = 0;
-            this.btnGuardarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarUsuario.Location = new System.Drawing.Point(3, 3);
-            this.btnGuardarUsuario.Name = "btnGuardarUsuario";
-            this.btnGuardarUsuario.Size = new System.Drawing.Size(150, 61);
-            this.btnGuardarUsuario.TabIndex = 0;
-            this.btnGuardarUsuario.Text = "GUARDAR";
-            this.btnGuardarUsuario.TextColor = System.Drawing.Color.White;
-            this.btnGuardarUsuario.UseVisualStyleBackColor = false;
-            this.btnGuardarUsuario.Click += new System.EventHandler(this.btnGuardarUsuario_Click);
-            // 
-            // btnActualizarUsuario
-            // 
-            this.btnActualizarUsuario.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnActualizarUsuario.BackgroundColor = System.Drawing.Color.MidnightBlue;
-            this.btnActualizarUsuario.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnActualizarUsuario.BorderRadius = 0;
-            this.btnActualizarUsuario.BorderSize = 0;
-            this.btnActualizarUsuario.FlatAppearance.BorderSize = 0;
-            this.btnActualizarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarUsuario.Location = new System.Drawing.Point(159, 3);
-            this.btnActualizarUsuario.Name = "btnActualizarUsuario";
-            this.btnActualizarUsuario.Size = new System.Drawing.Size(161, 61);
-            this.btnActualizarUsuario.TabIndex = 1;
-            this.btnActualizarUsuario.Text = "ACTUALIZAR";
-            this.btnActualizarUsuario.TextColor = System.Drawing.Color.White;
-            this.btnActualizarUsuario.UseVisualStyleBackColor = false;
-            // 
-            // BotonInformación
-            // 
-            this.BotonInformación.BackColor = System.Drawing.Color.Transparent;
-            this.BotonInformación.BackgroundColor = System.Drawing.Color.Transparent;
-            this.BotonInformación.BackgroundImage = global::Control_Empleados.Properties.Resources.i2;
-            this.BotonInformación.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BotonInformación.BorderColor = System.Drawing.Color.Transparent;
-            this.BotonInformación.BorderRadius = 27;
-            this.BotonInformación.BorderSize = 0;
-            this.BotonInformación.FlatAppearance.BorderSize = 0;
-            this.BotonInformación.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BotonInformación.ForeColor = System.Drawing.Color.Transparent;
-            this.BotonInformación.Location = new System.Drawing.Point(515, 157);
-            this.BotonInformación.Name = "BotonInformación";
-            this.BotonInformación.Size = new System.Drawing.Size(43, 41);
-            this.BotonInformación.TabIndex = 6;
-            this.BotonInformación.TextColor = System.Drawing.Color.Transparent;
-            this.BotonInformación.UseVisualStyleBackColor = false;
-            this.BotonInformación.Click += new System.EventHandler(this.BotonInformación_Click);
-            // 
             // ControlUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -608,10 +611,10 @@ namespace Control_Empleados.Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcono)).EndInit();
             this.flowLayoutBotonesGAV.ResumeLayout(false);
             this.panelPermisos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListadoModulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcono)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -649,7 +652,6 @@ namespace Control_Empleados.Presentacion
         private System.Windows.Forms.PictureBox pictureBox01;
         private System.Windows.Forms.PictureBox pictureBox02;
         private System.Windows.Forms.PictureBox pictureBox03;
-        private System.Windows.Forms.Label lblElegirIcono;
         private UI.UIPictureBox pictureBoxIcono;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutBotonesGAV;
         private UI.UIButton btnGuardarUsuario;
@@ -658,5 +660,6 @@ namespace Control_Empleados.Presentacion
         private UI.UIButton btnVolverIconos;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Marcar;
         private System.Windows.Forms.OpenFileDialog openFileDialogIcono;
+        private System.Windows.Forms.Label lblElegirIcono;
     }
 }

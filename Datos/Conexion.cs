@@ -10,7 +10,7 @@ namespace Control_Empleados.Datos
 {
     public class Conexion
     {
-        public static string conexion = @"Data source=MAIZAJOEL\SITIOA; Initial Catalog=ControlPersonal; Integrated Security=true";
+        public static string conexion = Convert.ToString(Logica.Desencriptacion.checkServer());
         public static SqlConnection sqlConexion = new SqlConnection(conexion);
 
         public static void abrir()

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Control_Empleados.Datos;
+using Control_Empleados.Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +19,51 @@ namespace Control_Empleados.Presentacion
             InitializeComponent();
         }
 
+        public int IdUsuario;
+        public string LoginV;
+
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-            panelBienvenida.Dock = DockStyle.Fill;            
+            panelBienvenida.Dock = DockStyle.Fill;
+            ValidarPermisos();
+        }
+
+        private void ValidarPermisos()
+        {
+            DataTable dt = new DataTable();
+            DPermisos dPermisos = new DPermisos();
+            LPermisos lPermisos = new LPermisos();
+            lPermisos.IdUsuario = IdUsuario;
+            dPermisos.MostrarPermisos(ref dt, lPermisos);
+
+            btnConsultas.Enabled = false;
+            btnPersonal.Enabled = false;
+            btnRegistro.Enabled = false;
+            btnUsuarios.Enabled = false;
+            btnRespaldos.Enabled = false;
+            btnRestaurar.Enabled = false;
+
+            foreach (DataRow rowPermisos in dt.Rows)
+            {
+                string Modulo = Convert.ToString(rowPermisos["Modulo"]);
+                switch (Modulo)
+                {
+                    case "PrePlanillas":
+                        btnConsultas.Enabled = true;
+                        break;
+                    case "Usuarios":
+                        btnUsuarios.Enabled = true;
+                        btnRegistro.Enabled = true;
+                        break;
+                    case "Personal":
+                        btnPersonal.Enabled = true;
+                        break;
+                    case "Respaldos":
+                        btnRespaldos.Enabled = true;
+                        btnRestaurar.Enabled = true;
+                        break;
+                }
+            }
         }
 
         private void btnPersonal_Click(object sender, EventArgs e)

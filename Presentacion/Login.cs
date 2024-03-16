@@ -36,6 +36,7 @@ namespace Control_Empleados.Presentacion
         {
             ValidarConexion();            
         }
+
         private void ValidarConexion()
         {
             VerificarConexion();
@@ -51,8 +52,7 @@ namespace Control_Empleados.Presentacion
                 else
                 {
                     CargarUsuarios();
-                }
-                CargarUsuarios();
+                }                
             }
             else
             {
@@ -61,11 +61,13 @@ namespace Control_Empleados.Presentacion
                 frm.ShowDialog();
             }
         }
+
         private void VerificarConexion()
         {
             DUsuarios dUsuarios = new DUsuarios();
             dUsuarios.VerificarUsuarios(ref Indicador);
         }
+
         private void CargarUsuarios()
         {
             try
@@ -112,7 +114,6 @@ namespace Control_Empleados.Presentacion
 
                     flowLayoutPanelCargarListadoUsuarios.Controls.Add(panel);
 
-                    label.Click += MiEventoLabel;
                     pictureBox.Click += MiEventoPictureBox;
                 }
             }
@@ -127,13 +128,7 @@ namespace Control_Empleados.Presentacion
         {
             //Capturar imagen perfil usuario //Tag se lo toma de la propiedad del picturebox (tag)
             Usuario = Convert.ToString(((PictureBox)sender).Tag);
-            MostrarPanelLogin();
-        }
-
-        private void MiEventoLabel(object sender, EventArgs e)
-        {
-            //Capturar el ususario
-            Usuario = ((Label)sender).Text;
+            uiPictureBoxLogin.Image = ((PictureBox)sender).Image;
             MostrarPanelLogin();
         }
 
@@ -173,11 +168,14 @@ namespace Control_Empleados.Presentacion
             {
                 Dispose();
                 MenuPrincipal frm = new MenuPrincipal();
+                frm.IdUsuario = Idusuario;
+                frm.LoginV = Usuario;
+                frm.pictureBoxLogin.Image = uiPictureBoxLogin.Image;
                 frm.ShowDialog();
             }
         }
 
-        private void uiButton13_Click(object sender, EventArgs e)
+        private void btnIniciarSesión_Click(object sender, EventArgs e)
         {
             MessageBox.Show("ERROR CONTRASEÑA INCORRECTA", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
@@ -243,6 +241,12 @@ namespace Control_Empleados.Presentacion
             {
                 txtcontraseña.Text = txtcontraseña.Text.Remove(txtcontraseña.Text.Length - 1);
             }
+        }
+
+        private void btnCambiarUsuario_Click(object sender, EventArgs e)
+        {
+            panelLogin.Visible = false;
+            PanelUsuarios.Visible = true;            
         }
     }
 }

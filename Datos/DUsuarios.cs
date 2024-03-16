@@ -157,6 +157,7 @@ namespace Control_Empleados.Datos
             {
                 //Si no usuario 0
                 id = 0;
+                MessageBox.Show(e.Message);
             }
             finally
             {

@@ -19,6 +19,7 @@ namespace Control_Empleados.Presentacion.AsistenteDeInstalación
 
         private void btnPrincipal_Click(object sender, EventArgs e)
         {
+
             //Destruir Formulario
             Dispose();
             InstalacionBD instalacionBD = new InstalacionBD();
