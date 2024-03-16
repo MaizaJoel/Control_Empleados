@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\OneDrive\Escritorio\Control_Empleados\Control_Empleados.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\OneDrive\Escritorio\Control_Empleados\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\OneDrive\Escritorio\Control_Empleados\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\OneDrive\Escritorio\Control_Empleados\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\OneDrive\Escritorio\Control_Empleados\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\OneDrive\Escritorio\Control_Empleados\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\OneDrive\Escritorio\Control_Empleados\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="D:\OneDrive\Escritorio\Control_Empleados\App.config" />
+  <event action="Analyze" type="Success" name="EleccionServidor.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\AsistenteDeInstalación\EleccionServidor.resx" />
+  <event action="Analyze" type="Success" name="InstalacionBD.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\AsistenteDeInstalación\InstalacionBD.resx" />
+  <event action="Analyze" type="Success" name="UsuarioPrincipal.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\AsistenteDeInstalación\UsuarioPrincipal.resx" />
+  <event action="Analyze" type="Success" name="ControlUsuarios.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\ControlUsuarios.resx" />
+  <event action="Analyze" type="Success" name="Login.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\Login.resx" />
+  <event action="Analyze" type="Success" name="MenuPrincipal.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\MenuPrincipal.resx" />
+  <event action="Analyze" type="Success" name="Personal.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\Personal.resx" />
+  <event action="Analyze" type="Success" name="Registro.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Presentacion\Registro.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="D:\OneDrive\Escritorio\Control_Empleados\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="AlertBox.resx" path="D:\OneDrive\Escritorio\Control_Empleados\UI\AlertBox.resx" />
+  <event action="Analyze" type="Success" name="Control_Empleados" path="D:\OneDrive\Escritorio\Control_Empleados\Control_Empleados.csproj" />
+  <event action="Analyze" type="Success" name="Control_Empleados" path="D:\OneDrive\Escritorio\Control_Empleados\Control_Empleados.sln" />
+  <event action="Backup" type="Success" name="Control_Empleados" path="D:\OneDrive\Escritorio\Control_Empleados\Control_Empleados.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="D:\OneDrive\Escritorio\Control_Empleados\Control_Empleados.csproj" />
+  <event action="Upgrade" type="Success" name="Control_Empleados" path="D:\OneDrive\Escritorio\Control_Empleados\Control_Empleados.csproj" />
+  <event action="Upgrade" type="Success" name="Control_Empleados" path="D:\OneDrive\Escritorio\Control_Empleados\Control_Empleados.sln" />
+</log>

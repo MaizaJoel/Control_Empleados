@@ -124,6 +124,7 @@ namespace Control_Empleados.Presentacion
             this.BtnIniciarSesion.TabIndex = 610;
             this.BtnIniciarSesion.Text = "Iniciar Sesión";
             this.BtnIniciarSesion.UseVisualStyleBackColor = false;
+            this.BtnIniciarSesion.Click += new System.EventHandler(this.BtnIniciarSesion_Click);
             // 
             // Panel13
             // 

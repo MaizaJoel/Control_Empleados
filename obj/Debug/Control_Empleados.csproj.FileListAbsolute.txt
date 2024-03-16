@@ -51,3 +51,12 @@ D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.pdb
 D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Control_Empleados.exe.config
 D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Control_Empleados.exe
 D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Control_Empleados.pdb
+D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Telerik.Reporting.dll
+D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Telerik.ReportViewer.WinForms.dll
+D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Telerik.Reporting.pdb
+D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Telerik.Reporting.xml
+D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Telerik.ReportViewer.WinForms.pdb
+D:\OneDrive\Escritorio\Control_Empleados\bin\Debug\Telerik.ReportViewer.WinForms.xml
+D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.Reportes.ReporteAsistencias.resources
+D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.exe.licenses
+D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.csproj.CopyComplete

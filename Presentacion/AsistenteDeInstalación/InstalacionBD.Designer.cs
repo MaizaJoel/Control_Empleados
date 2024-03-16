@@ -101,6 +101,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
             this.panel1.Controls.Add(this.Label66);
             this.panel1.Controls.Add(this.PictureBox7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -179,12 +180,12 @@
             // 
             // btnInstalarServidor
             // 
-            this.btnInstalarServidor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.btnInstalarServidor.BackColor = System.Drawing.Color.Thistle;
             this.btnInstalarServidor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInstalarServidor.FlatAppearance.BorderSize = 0;
             this.btnInstalarServidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInstalarServidor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.btnInstalarServidor.ForeColor = System.Drawing.Color.White;
+            this.btnInstalarServidor.ForeColor = System.Drawing.Color.Black;
             this.btnInstalarServidor.Location = new System.Drawing.Point(39, 23);
             this.btnInstalarServidor.Margin = new System.Windows.Forms.Padding(4);
             this.btnInstalarServidor.Name = "btnInstalarServidor";
@@ -211,7 +212,7 @@
             // 
             // PictureBox2
             // 
-            this.PictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.PictureBox2.BackColor = System.Drawing.Color.Thistle;
             this.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PictureBox2.Location = new System.Drawing.Point(0, 431);
             this.PictureBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -234,12 +235,13 @@
             // 
             // Panel7
             // 
-            this.Panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.Panel7.BackColor = System.Drawing.Color.Thistle;
             this.Panel7.Controls.Add(this.Label5);
             this.Panel7.Controls.Add(this.min);
             this.Panel7.Controls.Add(this.Label4);
             this.Panel7.Controls.Add(this.seg);
             this.Panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel7.ForeColor = System.Drawing.Color.Black;
             this.Panel7.Location = new System.Drawing.Point(373, 0);
             this.Panel7.Margin = new System.Windows.Forms.Padding(4);
             this.Panel7.Name = "Panel7";
@@ -249,7 +251,7 @@
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.ForeColor = System.Drawing.Color.White;
+            this.Label5.ForeColor = System.Drawing.Color.Black;
             this.Label5.Location = new System.Drawing.Point(84, 12);
             this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label5.Name = "Label5";
@@ -261,7 +263,7 @@
             // 
             this.min.AutoSize = true;
             this.min.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.min.ForeColor = System.Drawing.Color.White;
+            this.min.ForeColor = System.Drawing.Color.Black;
             this.min.Location = new System.Drawing.Point(79, 41);
             this.min.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.min.Name = "min";
@@ -272,7 +274,7 @@
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.ForeColor = System.Drawing.Color.White;
+            this.Label4.ForeColor = System.Drawing.Color.Black;
             this.Label4.Location = new System.Drawing.Point(167, 12);
             this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
@@ -284,7 +286,7 @@
             // 
             this.seg.AutoSize = true;
             this.seg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seg.ForeColor = System.Drawing.Color.White;
+            this.seg.ForeColor = System.Drawing.Color.Black;
             this.seg.Location = new System.Drawing.Point(167, 41);
             this.seg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.seg.Name = "seg";
@@ -294,11 +296,11 @@
             // 
             // Label2
             // 
-            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.Label2.BackColor = System.Drawing.Color.Thistle;
             this.Label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.Label2.ForeColor = System.Drawing.Color.DarkGray;
+            this.Label2.ForeColor = System.Drawing.Color.Black;
             this.Label2.Location = new System.Drawing.Point(0, 0);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
@@ -309,23 +311,23 @@
             // 
             // lbl1
             // 
-            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.lbl1.BackColor = System.Drawing.Color.Thistle;
             this.lbl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.lbl1.ForeColor = System.Drawing.Color.White;
+            this.lbl1.ForeColor = System.Drawing.Color.Black;
             this.lbl1.Location = new System.Drawing.Point(0, 139);
             this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(643, 213);
             this.lbl1.TabIndex = 616;
-            this.lbl1.Text = "Instalando Servidor...\r\n\r\nNo CIERRE esta Ventana, se cerrará automáticamente cuan" +
-    "do este todo Listo";
+            this.lbl1.Text = "Instalando Servidor...\r\n\r\nNo CIERRE esta ventana, se cerrará automáticamente cuan" +
+    "do este todo listo";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PictureBox1
             // 
-            this.PictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.PictureBox1.BackColor = System.Drawing.Color.Thistle;
             this.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.PictureBox1.Image = global::Control_Empleados.Properties.Resources.warning;
             this.PictureBox1.Location = new System.Drawing.Point(0, 16);
@@ -338,7 +340,7 @@
             // 
             // Panel5
             // 
-            this.Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.Panel5.BackColor = System.Drawing.Color.Thistle;
             this.Panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel5.Location = new System.Drawing.Point(0, 0);
             this.Panel5.Margin = new System.Windows.Forms.Padding(4);
@@ -705,7 +707,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1917, 1053);
             this.Controls.Add(this.panelDetallesInstalador);
             this.Controls.Add(this.panel8);

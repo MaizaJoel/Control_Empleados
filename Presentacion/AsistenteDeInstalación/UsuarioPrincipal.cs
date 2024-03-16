@@ -19,6 +19,7 @@ namespace Control_Empleados.Presentacion.AsistenteDeInstalación
         public UsuarioPrincipal()
         {
             InitializeComponent();
+            this.ActiveControl = txtNombre;
         }
 
         int IdUsuario;
@@ -91,23 +92,22 @@ namespace Control_Empleados.Presentacion.AsistenteDeInstalación
             foreach (DataRow row in dt.Rows)
             {
                 int IdModulo = Convert.ToInt32(row["IdModulo"]);
-                LPermisos parametros = new LPermisos();
-                DPermisos funcion = new DPermisos();
-                parametros.IdModulo = IdModulo;
-                parametros.IdUsuario = IdUsuario;
-                funcion.InsertarPermisos(parametros);
+                LPermisos lpermisos = new LPermisos();
+                DPermisos dpermisos = new DPermisos();
+                lpermisos.IdModulo = IdModulo;
+                lpermisos.IdUsuario = IdUsuario;
+                dpermisos.InsertarPermisos(lpermisos);
             }
             MessageBox.Show("!LISTO! RECUERDA que para Iniciar Sesión tu usuario es: " + txtUsuario.Text + " y tu contraseña es: " + txtContraseña.Text, "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Dispose();
             Login frm = new Login();
             frm.ShowDialog();
         }
-
         private void InsertarModulos()
         {
             LModulo parametros = new LModulo();
             DModulos funcion = new DModulos();
-            var Modulos = new List<string> { "Usuarios", "Respaldos", "Personal", "PrePlanillas" };
+            var Modulos = new List<string> { "Usuarios", "Asistencias", "Personal", "Respaldos" };
             foreach (var Modulo in Modulos)
             {
                 parametros.Modulo = Modulo;

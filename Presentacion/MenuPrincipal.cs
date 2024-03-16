@@ -48,7 +48,7 @@ namespace Control_Empleados.Presentacion
                 string Modulo = Convert.ToString(rowPermisos["Modulo"]);
                 switch (Modulo)
                 {
-                    case "PrePlanillas":
+                    case "Asistencias":
                         btnConsultas.Enabled = true;
                         break;
                     case "Usuarios":
@@ -94,10 +94,9 @@ namespace Control_Empleados.Presentacion
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            //panelContenido.Controls.Clear();
-            //Registro registro = new Registro();
-            //registro.Dock = DockStyle.Fill;
-            //panelContenido.Controls.Add(registro);
+            Dispose();
+            Registro frm = new Registro();
+            frm.ShowDialog();
         }
     }
 }

@@ -46,6 +46,8 @@ namespace Control_Empleados.Presentacion
             txtNombre.Clear();
             txtUsuario.Clear();
             txtContraseña.Clear();
+            txtUsuario.Enabled = true;
+            dataGridViewListadoModulos.Enabled = true;
         }
         private void MostrarPaneles()
         {
@@ -158,7 +160,7 @@ namespace Control_Empleados.Presentacion
                 }
                 else
                 {
-                    ObtenerDatos();
+                    ObtenerDatosUsuarios();
                 }
 
             }
@@ -170,7 +172,6 @@ namespace Control_Empleados.Presentacion
                     CapturarIdUsuario();
                     EliminarUsuarios();
                 }
-
             }
         }
         private void RestaurarUsuario()
@@ -184,7 +185,7 @@ namespace Control_Empleados.Presentacion
                 MostrarUsuarios();
             }
         }
-        private void ObtenerDatos()
+        private void ObtenerDatosUsuarios()
         {
             CapturarIdUsuario();
             txtNombre.Text = dataGridViewListadoUsuarios.SelectedCells[3].Value.ToString();

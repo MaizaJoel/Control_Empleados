@@ -374,7 +374,7 @@ namespace Control_Empleados.Presentacion
             this.flowLayoutBotonesGAV.Controls.Add(this.btnGuardarUsuario);
             this.flowLayoutBotonesGAV.Controls.Add(this.btnActualizarUsuario);
             this.flowLayoutBotonesGAV.Controls.Add(this.btnVolverUsuario);
-            this.flowLayoutBotonesGAV.Location = new System.Drawing.Point(148, 515);
+            this.flowLayoutBotonesGAV.Location = new System.Drawing.Point(148, 541);
             this.flowLayoutBotonesGAV.Name = "flowLayoutBotonesGAV";
             this.flowLayoutBotonesGAV.Size = new System.Drawing.Size(401, 71);
             this.flowLayoutBotonesGAV.TabIndex = 24;
@@ -443,7 +443,7 @@ namespace Control_Empleados.Presentacion
             this.panelPermisos.Controls.Add(this.dataGridViewListadoModulos);
             this.panelPermisos.Location = new System.Drawing.Point(205, 271);
             this.panelPermisos.Name = "panelPermisos";
-            this.panelPermisos.Size = new System.Drawing.Size(300, 206);
+            this.panelPermisos.Size = new System.Drawing.Size(300, 224);
             this.panelPermisos.TabIndex = 9;
             // 
             // dataGridViewListadoModulos
@@ -471,7 +471,7 @@ namespace Control_Empleados.Presentacion
             this.dataGridViewListadoModulos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewListadoModulos.RowTemplate.Height = 40;
             this.dataGridViewListadoModulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewListadoModulos.Size = new System.Drawing.Size(300, 206);
+            this.dataGridViewListadoModulos.Size = new System.Drawing.Size(300, 224);
             this.dataGridViewListadoModulos.TabIndex = 3;
             // 
             // Marcar
