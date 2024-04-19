@@ -58,7 +58,7 @@ namespace Control_Empleados.Presentacion.AsistenteDeInstalación
         private void InsertarUsuarioDefecto()
         {
             LUsuarios parametros = new LUsuarios();
-            DUsuarios funcion = new DUsuarios();
+            DUsuarios dUsuarios = new DUsuarios();
             parametros.NombreApellido = txtNombre.Text;
             parametros.Login = txtUsuario.Text;
             parametros.Password = txtContraseña.Text;
@@ -66,29 +66,29 @@ namespace Control_Empleados.Presentacion.AsistenteDeInstalación
             Icono.Image.Save(ms, Icono.Image.RawFormat);
             parametros.Icono = ms.GetBuffer();
             this.ActiveControl = txtNombre;
-            if (funcion.InsertarUsuarios(parametros) == true)
+            if (dUsuarios.InsertarUsuarios(parametros) == true)
             {
-                //InsertarCopiasBD();
+                InsertarCopiasBD();
                 InsertarModulos();
                 ObtenerIdUsuario();
                 InsertarPermisos();
             }
         }
-        //private void InsertarCopiasBD()
-        //{
-        //    DcopiasBd funcion = new DcopiasBd();
-        //    funcion.InsertarCopiasBd();
-        //}
+        private void InsertarCopiasBD()
+        {
+            DCopiasDeSeguridad dCopiasDeSeguridad  = new DCopiasDeSeguridad();
+            dCopiasDeSeguridad.InsertarCopiasDeSeguridad();
+        }
         private void ObtenerIdUsuario()
         {
-            DUsuarios funcion = new DUsuarios();
-            funcion.ObtenerIdUsuario(ref IdUsuario, txtUsuario.Text);
+            DUsuarios dUsuarios = new DUsuarios();
+            dUsuarios.ObtenerIdUsuario(ref IdUsuario, txtUsuario.Text);
         }
         private void InsertarPermisos()
         {
             DataTable dt = new DataTable();
-            DModulos funcionModulos = new DModulos();
-            funcionModulos.MostrarModulos(ref dt);
+            DModulos dModulos = new DModulos();
+            dModulos.MostrarModulos(ref dt);
             foreach (DataRow row in dt.Rows)
             {
                 int IdModulo = Convert.ToInt32(row["IdModulo"]);
@@ -106,12 +106,12 @@ namespace Control_Empleados.Presentacion.AsistenteDeInstalación
         private void InsertarModulos()
         {
             LModulo parametros = new LModulo();
-            DModulos funcion = new DModulos();
+            DModulos dModulos = new DModulos();
             var Modulos = new List<string> { "Usuarios", "Asistencias", "Personal", "Respaldos" };
             foreach (var Modulo in Modulos)
             {
                 parametros.Modulo = Modulo;
-                funcion.InsertarModulos(parametros);
+                dModulos.InsertarModulos(parametros);
             }
         }
 

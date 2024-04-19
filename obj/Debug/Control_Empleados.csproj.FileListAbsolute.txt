@@ -61,3 +61,4 @@ D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.Presentacio
 D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.exe.licenses
 D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.csproj.CopyComplete
 D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.Asistencia.resources
+D:\OneDrive\Escritorio\Control_Empleados\obj\Debug\Control_Empleados.Presentacion.CopiasDeSeguridad.resources
