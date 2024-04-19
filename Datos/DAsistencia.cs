@@ -84,5 +84,28 @@ namespace Control_Empleados.Datos
                 Conexion.cerrar();
             }
         }
+
+        public void MostrarAsistenciaDiariaPersonal(ref DataTable dt, DateTime desde, DateTime hasta, int semana)
+        {
+            try
+            {
+                Conexion.abrir();
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("AsistenciaDiariaPersonal", Conexion.sqlConexion);
+                sqlDataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDataAdapter.SelectCommand.Parameters.AddWithValue("@Desde", desde);
+                sqlDataAdapter.SelectCommand.Parameters.AddWithValue("@Hasta", hasta);
+                sqlDataAdapter.SelectCommand.Parameters.AddWithValue("@Semana", semana);
+                sqlDataAdapter.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.StackTrace);
+
+            }
+            finally
+            {
+                Conexion.cerrar();
+            }
+        }
     }
 }

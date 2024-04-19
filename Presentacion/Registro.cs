@@ -36,25 +36,28 @@ namespace Control_Empleados.Presentacion
             if (cedula == txtCedula.Text)
             {
                 BuscarAsistenciaId();
-                if (contador == 0) {                 
-                    InsertarAsistencia();                
+                if (contador == 0)
+                {
+                    InsertarAsistencia();
                 }
                 else
                 {
                     DialogResult result = MessageBox.Show("Agregar Adelanto?", "Adelantos", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                     if (result == DialogResult.OK)
                     {
+                        panelIngreso.Visible = false;
                         panelAdelanto.Visible = true;
-                        panelAdelanto.Location = new Point(panelIngreso.Location.X, panelIngreso.Location.Y);
-                        //panelAdelanto.Size = new Size(panelIngreso.Width, panelAdelanto.Height);
+                        //panelAdelanto.Location = new Point(panelIngreso.Location.X, panelIngreso.Location.Y);
+                        panelAdelanto.Size = new Size(panelIngreso.Width, panelAdelanto.Height);
                         panelAdelanto.BringToFront();
                         txtAdelanto.Clear();
                         txtAdelanto.Focus();
                     }
                     else
                     {
+                        txtAdelanto.Text = "0";
                         ConfirmarSalida();
-                    }                                       
+                    }
                 }
             }
         }
@@ -122,6 +125,7 @@ namespace Control_Empleados.Presentacion
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            panelIngreso.Visible = true;
             ConfirmarSalida();
         }
 

@@ -66,9 +66,6 @@ namespace Control_Empleados.Logica
         {
             try
             {
-
-
-
                 byte[] cipherBytes = Convert.FromBase64String(Data);
                 PasswordDeriveBytes pdb = new PasswordDeriveBytes(Password, new byte[] { 0x0, 0x1, 0x2, 0x1C, 0x1D, 0x1E, 0x3, 0x4, 0x5, 0xF, 0x20, 0x21, 0xAD, 0xAF, 0xA4 });
                 if (Bits == 128)

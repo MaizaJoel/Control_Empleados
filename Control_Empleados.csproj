@@ -68,6 +68,12 @@
     <Compile Include="Logica\LPermisos.cs" />
     <Compile Include="Logica\LPersonal.cs" />
     <Compile Include="Logica\LUsuarios.cs" />
+    <Compile Include="Presentacion\Asistencia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\AsistenteDeInstalación\ConexionRemota.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     <Compile Include="UI\UI.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Presentacion\Asistencia.resx">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\AsistenteDeInstalación\EleccionServidor.resx">
       <DependentUpon>EleccionServidor.cs</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +321,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_money.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

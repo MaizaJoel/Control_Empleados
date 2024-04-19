@@ -106,8 +106,7 @@ namespace Control_Empleados.Presentacion
             // 
             // BtnIniciarSesion
             // 
-            this.BtnIniciarSesion.BackColor = System.Drawing.Color.Transparent;
-            this.BtnIniciarSesion.BackgroundImage = global::Control_Empleados.Properties.Resources.eva0;
+            this.BtnIniciarSesion.BackColor = System.Drawing.Color.DarkGray;
             this.BtnIniciarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnIniciarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -525,26 +524,26 @@ namespace Control_Empleados.Presentacion
             this.panelAdelanto.Controls.Add(this.txtAdelanto);
             this.panelAdelanto.Controls.Add(this.btnConfirmar);
             this.panelAdelanto.Controls.Add(this.label1);
-            this.panelAdelanto.Location = new System.Drawing.Point(5, 181);
+            this.panelAdelanto.Location = new System.Drawing.Point(210, 134);
             this.panelAdelanto.Margin = new System.Windows.Forms.Padding(4);
             this.panelAdelanto.Name = "panelAdelanto";
-            this.panelAdelanto.Size = new System.Drawing.Size(254, 119);
+            this.panelAdelanto.Size = new System.Drawing.Size(626, 356);
             this.panelAdelanto.TabIndex = 615;
             this.panelAdelanto.Visible = false;
             // 
             // txtAdelanto
             // 
-            this.txtAdelanto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtAdelanto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdelanto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtAdelanto.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdelanto.Location = new System.Drawing.Point(0, 36);
             this.txtAdelanto.Name = "txtAdelanto";
-            this.txtAdelanto.Size = new System.Drawing.Size(254, 27);
+            this.txtAdelanto.Size = new System.Drawing.Size(626, 45);
             this.txtAdelanto.TabIndex = 612;
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfirmar.BackgroundImage = global::Control_Empleados.Properties.Resources.add;
+            this.btnConfirmar.BackColor = System.Drawing.Color.LightCyan;
+            this.btnConfirmar.BackgroundImage = global::Control_Empleados.Properties.Resources.add_money;
             this.btnConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnConfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirmar.FlatAppearance.BorderSize = 0;
@@ -553,11 +552,12 @@ namespace Control_Empleados.Presentacion
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar.Location = new System.Drawing.Point(182, 61);
+            this.btnConfirmar.Location = new System.Drawing.Point(349, 88);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(68, 56);
+            this.btnConfirmar.Size = new System.Drawing.Size(91, 74);
             this.btnConfirmar.TabIndex = 611;
+            this.btnConfirmar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
@@ -569,9 +569,9 @@ namespace Control_Empleados.Presentacion
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 36);
+            this.label1.Size = new System.Drawing.Size(626, 36);
             this.label1.TabIndex = 462;
-            this.label1.Text = "Adelanto";
+            this.label1.Text = "ADELANTO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timerHora
