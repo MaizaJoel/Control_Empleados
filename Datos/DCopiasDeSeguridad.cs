@@ -50,7 +50,7 @@ namespace Control_Empleados.Datos
             try
             {
                 Conexion.abrir();
-                SqlCommand cmd = new SqlCommand("EditarCopiasBd", Conexion.sqlConexion);
+                SqlCommand cmd = new SqlCommand("EditarCopiasDeSeguridad", Conexion.sqlConexion);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Ruta", parametros.Ruta);
                 cmd.ExecuteNonQuery();
